@@ -29,6 +29,8 @@
 		3071C93E225B5EE100CC5935 /* InfoStreamFamilyItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C93D225B5EE100CC5935 /* InfoStreamFamilyItemModel.m */; };
 		3071C943225B601300CC5935 /* InfoStreamFamilyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C942225B601300CC5935 /* InfoStreamFamilyView.m */; };
 		3071C946225B60FA00CC5935 /* InfoStreamFamilySectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C945225B60FA00CC5935 /* InfoStreamFamilySectionModel.m */; };
+		3071C949225B6DA900CC5935 /* InfoStreamFamilyRoleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C948225B6DA900CC5935 /* InfoStreamFamilyRoleViewCell.m */; };
+		3071C94C225B6F4B00CC5935 /* InfoStreamFamilyCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C94B225B6F4A00CC5935 /* InfoStreamFamilyCollectionCell.m */; };
 		4796A592A80DB6F5C939C009 /* Pods_CollectionViewDemo_MVVM_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7142B1C712E1D4864C3C72A3 /* Pods_CollectionViewDemo_MVVM_.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,10 @@
 		3071C942225B601300CC5935 /* InfoStreamFamilyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamFamilyView.m; sourceTree = "<group>"; };
 		3071C944225B60FA00CC5935 /* InfoStreamFamilySectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamFamilySectionModel.h; sourceTree = "<group>"; };
 		3071C945225B60FA00CC5935 /* InfoStreamFamilySectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamFamilySectionModel.m; sourceTree = "<group>"; };
+		3071C947225B6DA900CC5935 /* InfoStreamFamilyRoleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoStreamFamilyRoleViewCell.h; sourceTree = "<group>"; };
+		3071C948225B6DA900CC5935 /* InfoStreamFamilyRoleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoStreamFamilyRoleViewCell.m; sourceTree = "<group>"; };
+		3071C94A225B6F4A00CC5935 /* InfoStreamFamilyCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoStreamFamilyCollectionCell.h; sourceTree = "<group>"; };
+		3071C94B225B6F4A00CC5935 /* InfoStreamFamilyCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoStreamFamilyCollectionCell.m; sourceTree = "<group>"; };
 		65A1E31BEC563E2AAF4FC991 /* Pods-CollectionViewDemo(MVVM).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewDemo(MVVM).release.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionViewDemo(MVVM)/Pods-CollectionViewDemo(MVVM).release.xcconfig"; sourceTree = "<group>"; };
 		7142B1C712E1D4864C3C72A3 /* Pods_CollectionViewDemo_MVVM_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionViewDemo_MVVM_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -164,6 +170,10 @@
 				3071C937225B5E5800CC5935 /* InfoStreamFamilyCollectionFooterCell.m */,
 				3071C939225B5E5900CC5935 /* InfoStreamFamilyCollectionHeaderCell.h */,
 				3071C936225B5E5800CC5935 /* InfoStreamFamilyCollectionHeaderCell.m */,
+				3071C947225B6DA900CC5935 /* InfoStreamFamilyRoleViewCell.h */,
+				3071C948225B6DA900CC5935 /* InfoStreamFamilyRoleViewCell.m */,
+				3071C94A225B6F4A00CC5935 /* InfoStreamFamilyCollectionCell.h */,
+				3071C94B225B6F4A00CC5935 /* InfoStreamFamilyCollectionCell.m */,
 				3071C933225B5D4000CC5935 /* InfoStreamCollectionHeaderView.h */,
 				3071C934225B5D4000CC5935 /* InfoStreamCollectionHeaderView.m */,
 				3071C941225B601300CC5935 /* InfoStreamFamilyView.h */,
@@ -360,6 +370,7 @@
 				3071C93E225B5EE100CC5935 /* InfoStreamFamilyItemModel.m in Sources */,
 				3071C92C225B547C00CC5935 /* InfoStreamItemModel.m in Sources */,
 				3071C918225B3EDA00CC5935 /* InfoStreamViewModel.m in Sources */,
+				3071C949225B6DA900CC5935 /* InfoStreamFamilyRoleViewCell.m in Sources */,
 				3071C923225B507E00CC5935 /* InfoStreamView.m in Sources */,
 				3071C935225B5D4000CC5935 /* InfoStreamCollectionHeaderView.m in Sources */,
 				3071C946225B60FA00CC5935 /* InfoStreamFamilySectionModel.m in Sources */,
@@ -369,6 +380,7 @@
 				3071C929225B53F100CC5935 /* InfoStreamSectionModel.m in Sources */,
 				3071C92F225B552400CC5935 /* InfoStreamCollectionViewCell.m in Sources */,
 				3071C932225B57FF00CC5935 /* UIView+FLKit.m in Sources */,
+				3071C94C225B6F4B00CC5935 /* InfoStreamFamilyCollectionCell.m in Sources */,
 				3071C926225B52D800CC5935 /* InfoStreamRefreshHeader.m in Sources */,
 				3071C93B225B5E5900CC5935 /* InfoStreamFamilyCollectionFooterCell.m in Sources */,
 				3071C911225B3B1500CC5935 /* InfoStreamViewController.m in Sources */,

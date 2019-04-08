@@ -69,8 +69,7 @@
     {
         if ([sec.rawData isKindOfClass:[RoleInfoStreamDatasFolkInfo class]]) {
             RoleInfoStreamDatasFolkInfo *folk = (RoleInfoStreamDatasFolkInfo*)sec.rawData;
-//                        SRDevManageViewController *controller = [[SRDevManageViewController alloc] init];
-//                        [self.fl_navigationController pushViewController:controller animated:NO];
+
         }
         
     }else if (sec.logicalType == InfoStreamFamilySectionLogicalType_Message) {
@@ -78,8 +77,7 @@
         if (item.infoStyle == InfoStreamItemStyleSectionHeader) {
             //do nothing
         }else {
-//            SRDevManageViewController *vc = [[SRDevManageViewController alloc] init];
-//            [self.fl_navigationController pushViewController:vc animated:YES];
+            
         }
     }
     
@@ -96,10 +94,7 @@
     }
     
     if (actionType == InfoStreamActionTypeItemRightArrow) {
-//        if ([sec.rawData isKindOfClass:[SRgetRoleInfoStreamDatasFolkInfo class]]) {
-//            SRgetRoleInfoStreamDatasFolkInfo *folk = (SRgetRoleInfoStreamDatasFolkInfo*)sec.rawData;
-//
-//        }
+
     }
 }
 

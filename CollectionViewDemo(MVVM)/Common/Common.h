@@ -22,6 +22,10 @@ FOUNDATION_EXPORT const unsigned char CommonVersionString[];
 #define UIColorFromRGB(c)   [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:1.0]
 #define ScreenWidth                 [[UIScreen mainScreen] bounds].size.width
 #define ScreenHeight                [[UIScreen mainScreen] bounds].size.height
+#define NavigationBarHeight       44.0f
+#define TabBarHeight              49.0f
+#define StatusBarHeight           ((CGSizeEqualToSize(CGSizeMake(375.0f, 812.0f), [UIScreen mainScreen].bounds.size) || CGSizeEqualToSize(CGSizeMake(414.0f, 896.0f), [UIScreen mainScreen].bounds.size)) ? 44.0f : 20.0f)  // 增加iPhoneX适配
+#define NavAndStatusHeight        (NavigationBarHeight + StatusBarHeight)
 
 #define kInfoStreamMargin (14.0)
 #define kInfoStreamMargin (14.0)
