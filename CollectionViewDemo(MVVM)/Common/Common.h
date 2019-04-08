@@ -17,6 +17,8 @@ FOUNDATION_EXPORT const unsigned char CommonVersionString[];
 
 #import <Masonry/Masonry.h>
 #import <YYModel/YYModel.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
 #import "UIView+FLKit.h"
 
 #define UIColorFromRGB(c)   [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:1.0]

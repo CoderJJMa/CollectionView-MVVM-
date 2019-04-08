@@ -114,7 +114,7 @@
     InfoStreamFamilyItemModel *model = (InfoStreamFamilyItemModel*)info;
     self.nameLabel.text = model.title;
 
-//    [self.iconView sd_setImageWithURL:[NSURL URLWithString:model.icon]];
+    [self.iconView sd_setImageWithURL:[NSURL URLWithString:model.icon]];
     
     NSString *subTitle = @"";
     if (model.subtitle.length>0) {

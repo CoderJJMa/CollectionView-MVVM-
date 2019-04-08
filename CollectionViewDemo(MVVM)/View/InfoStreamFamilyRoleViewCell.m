@@ -160,7 +160,7 @@ static CGFloat kTextMaginX = 14+12+12;
     [super updateInfo:info];
     InfoStreamFamilyItemModel *model = (InfoStreamFamilyItemModel*)info;
     self.nameLabel.text = model.title;
-//    [self.iconView sd_setImageWithURL:[NSURL URLWithString:model.icon]];
+    [self.iconView sd_setImageWithURL:[NSURL URLWithString:model.icon]];
     self.timeLabel.text = model.subtitle;
     self.tipLabel.text = model.desc;
     

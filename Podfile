@@ -6,4 +6,6 @@ target 'CollectionViewDemo(MVVM)' do
 	pod 'Masonry'
     pod 'YYModel'
     pod 'MJRefresh'
+    pod 'SDWebImage'
+
 end
