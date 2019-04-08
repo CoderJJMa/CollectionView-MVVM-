@@ -9,13 +9,6 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@class InfoStreamSrcFamilyDatasModel,RoleInfoStreamDatasFolkInfo;
-@interface RoleInfoStreamDatasModel : NSObject
-@property (nonatomic, strong) InfoStreamSrcFamilyDatasModel *family;
-@property (nonatomic , strong) NSArray   <RoleInfoStreamDatasFolkInfo *>   * folks;
-+ (NSDictionary *)modelContainerPropertyGenericClass ;
-
-@end
 
 @interface RoleInfoStreamDatasBehavior :NSObject
 @property (nonatomic , copy) NSString              * icon;
@@ -43,5 +36,14 @@ NS_ASSUME_NONNULL_BEGIN
 @interface InfoStreamSrcFamilyDatasModel :NSObject
 @property(nonatomic, assign)NSInteger routerCount; //路由器数量
 @end
+
+
+@interface RoleInfoStreamDatasModel : NSObject
+@property (nonatomic, strong) InfoStreamSrcFamilyDatasModel *family;
+@property (nonatomic , strong) NSArray   <RoleInfoStreamDatasFolkInfo *>   * folks;
++ (NSDictionary *)modelContainerPropertyGenericClass ;
+
+@end
+
 
 NS_ASSUME_NONNULL_END
