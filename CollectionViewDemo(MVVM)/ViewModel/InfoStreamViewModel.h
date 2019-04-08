@@ -10,10 +10,10 @@
 #import "InfoStreamProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class InfoStreamSectionModel;
 @interface InfoStreamViewModel : NSObject
 
-
+@property (nonatomic, strong) NSArray<InfoStreamSectionModel*> *infoCards;
 @property (nonatomic, weak) id<InfoStreamProtocol> delegate;
 
 - (void)requestListWithRouter:(NSDictionary *)parmar;

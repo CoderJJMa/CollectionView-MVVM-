@@ -37,4 +37,9 @@
     
 }
 
+- (InfoStreamFamilySectionModel*)sectionModelWithIndexPath:(NSIndexPath*)path {
+    if (path.row >= self.infoCards.count) return nil;
+    return (InfoStreamFamilySectionModel*)self.infoCards[path.section];
+}
+
 @end

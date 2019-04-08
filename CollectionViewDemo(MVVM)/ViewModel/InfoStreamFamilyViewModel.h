@@ -10,12 +10,13 @@
 #import "RoleInfoStreamDatasModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class InfoStreamFamilySectionModel;
 @interface InfoStreamFamilyViewModel : InfoStreamViewModel
 
 // 服务器返回的真实的数据结构
 @property(nonatomic, strong)RoleInfoStreamDatasModel *rawData;
 
+- (InfoStreamFamilySectionModel*)sectionModelWithIndexPath:(NSIndexPath*)path;
 
 @end
 
