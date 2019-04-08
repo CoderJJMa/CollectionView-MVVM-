@@ -1,0 +1,231 @@
+{
+    "title":"2台防火墙正在守护您的家人上网安全",
+    "info":[
+        {
+            "folk":
+            {
+                "id":1234,
+                "title":"小宝的一天",
+                "title_ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554290257989&di=059ea47a5b43cf2863e6fa64aa80d2ac&imgtype=jpg&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20161207%2Fbfb516b8b32b4d4a87fa7cd92477ecbe_th.jpg",
+                "subtitle":"今日上网:4.3小时",
+                "status":"疲劳上网",
+                "status_ico":"htpps://jdjskdjskajk.png",
+                "status_col":"0xff00",
+                "desc":"小宝今天总共上网4个小时43分钟，已严重超时3小时32分钟，建议提醒小宝注意上网时长。",
+                "desc_type":0,
+                "devices":
+                [
+                    {
+                        "rid": "ddd",
+                        "devices":
+                        [
+                            "aa-aa-aa-aa-aa-aa",
+                            "aa-aa-aa-aa-aa-aa"
+                        ]
+                    },
+                    {
+                        "rid":"aaa",
+                        "devices":
+                        [
+                            "aa-aa-aa-aa-aa-aa",
+                            "aa-aa-aa-aa-aa-aa"
+                        ]
+                    }
+                ]
+            },
+            "behavior":
+            [
+                {
+                    "title":"正在使用微信聊天",
+                    "subtitle1":"3分钟前",
+                    "subtitle2":"来自iPhones XS",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                    "desc":"小宝10:22开始使用微信，今天已累计使用8分钟",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":"fgsd"
+                },
+                {
+                    "title":"一笔支付宝付款",
+                    "subtitle1":"5分钟前",
+                    "subtitle2":"来自iPad-5",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                    "desc":"小宝今天已经发起了2笔支付",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":   "fgsd"
+                },
+                {
+                    "title":"深夜还在上网",
+                    "subtitle1":"21分钟前",
+                    "subtitle2":"来自OPPO Find X",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                    "desc":"小宝23:22打开了淘宝购物",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":   "fgsd"
+                },
+                {
+                    "title":"看视频已超时23分钟",
+                    "subtitle1":"1小时前",
+                    "subtitle2":"来自iPad-5",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                    "desc":"小宝今天已经连续看了2个小时23分钟的视频",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":   "fgsd"
+                },
+                {
+                    "title":"浏览了一个危险网站",
+                    "subtitle1":"5分钟前",
+                    "subtitle2":"来自iPad-5",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                    "desc":"该网址疑似欺诈网址，已主动拦截 \nhttp://www.baidu.com",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":   "fgsd"
+                },
+                {
+                    "title":"一玩了一局王者荣耀",
+                    "subtitle1":"5分钟前",
+                    "subtitle2":"来自iPad-5",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                    "desc":"今天小宝已经累计玩王者荣耀30分钟",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":   "fgsd"
+                },
+                {
+                    "title":"深夜总共上网了23分钟",
+                    "subtitle1":"5分钟前",
+                    "subtitle2":"来自Macbook",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                    "desc":"今天小宝已经累计玩王者荣耀30分钟",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":   "fgsd"
+                }
+            ]
+        },
+        {
+            "folk":
+            {
+                "id":1234,
+                "title":"小贝的一天",
+                "title_ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554290257989&di=059ea47a5b43cf2863e6fa64aa80d2ac&imgtype=jpg&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20161207%2Fbfb516b8b32b4d4a87fa7cd92477ecbe_th.jpg",
+                "subtitle":"今日上网:4.3小时",
+                "status":"疲劳上网",
+                "status_ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                "status_col":"0xff00",
+                "desc":"小贝深夜仍在上网，影响睡眠哦，记得提醒他早点休息",
+                "desc_type":0,
+                "devices":
+                [
+                    {
+                        "rid": "0xfds",
+                        "devices":
+                        [
+                            "aa-aa-aa-aa-aa-aa",
+                            "aa-aa-aa-aa-aa-aa"
+                        ]
+                    },
+                    {
+                        "rid": "dasfd",
+                        "devices":
+                        [
+                            "aa-aa-aa-aa-aa-aa",
+                            "aa-aa-aa-aa-aa-aa"
+                        ]
+                    }
+                ]
+            },
+            "behavior":
+            [
+                {
+                    "title":"正在使用微信聊天",
+                    "subtitle1":"3分钟前",
+                    "subtitle2":"来自iPhones XS",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                    "desc":"小宝10:22开始使用微信，今天已累计使用8分钟",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":"fgsd"
+                },
+                {
+                    "title":"一笔支付宝付款",
+                    "subtitle1":"5分钟前",
+                    "subtitle2":"来自iPad-5",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554373516336&di=bcf3bf1ba43fecba7fe5fccb968ae32f&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic%2Fcover%2F00%2F06%2F13%2F576ba5003fa50_610.jpg",
+                    "desc":"小宝今天已经发起了2笔支付",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":   "fgsd"
+                },
+                {
+                    "title":"深夜还在上网",
+                    "subtitle1":"21分钟前",
+                    "subtitle2":"来自OPPO Find X",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                    "desc":"小宝23:22打开了淘宝购物",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":   "fgsd"
+                },
+                {
+                    "title":"看视频已超时23分钟",
+                    "subtitle1":"1小时前",
+                    "subtitle2":"来自iPad-5",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                    "desc":"小宝今天已经连续看了2个小时23分钟的视频",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":   "fgsd"
+                },
+                {
+                    "title":"浏览了一个危险网站",
+                    "subtitle1":"5分钟前",
+                    "subtitle2":"来自iPad-5",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                    "desc":"该网址疑似欺诈网址，已主动拦截 \nhttp://www.baidu.com",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":   "fgsd"
+                },
+                {
+                    "title":"一玩了一局王者荣耀",
+                    "subtitle1":"5分钟前",
+                    "subtitle2":"来自iPad-5",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                    "desc":"今天小宝已经累计玩王者荣耀30分钟",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":   "fgsd"
+                },
+                {
+                    "title":"深夜总共上网了23分钟",
+                    "subtitle1":"5分钟前",
+                    "subtitle2":"来自Macbook",
+                    "ico":"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554370653915&di=51c525be7734f7ff14325355e19abe80&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F86%2F90%2F2856ec5a0fc84c0.jpg",
+                    "desc":"今天小宝已经累计玩王者荣耀30分钟",
+                    "desc_url":"黄网",
+                    "rid": "fgsd",
+                    "mac":"fgsd",
+                    "type":   "fgsd"
+                }
+            ]
+        }
+    ]
+    }

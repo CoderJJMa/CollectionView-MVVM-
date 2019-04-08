@@ -7,6 +7,7 @@
 //
 
 #import "InfoStreamViewController.h"
+#import "Common.h"
 
 
 @interface InfoStreamViewController ()
@@ -19,7 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-  
+    
+    
 }
 
 @end
