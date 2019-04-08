@@ -17,15 +17,15 @@
 //    模拟数据
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             NSBundle * bunndle = [NSBundle mainBundle];
-            NSString *path = [[bunndle resourcePath] stringByAppendingPathComponent:@"InfoStream.json"];
-            NSData *jsonData = [NSData dataWithContentsOfFile:path];
+            NSString *filePath = [[bunndle resourcePath] stringByAppendingPathComponent:@"InfoStream.json"];
+            NSData *jsonData = [NSData dataWithContentsOfFile:filePath];
             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:NULL];
-            weakSelf.rawData = [RoleInfoStreamDatasModel yy_modelWithJSON:json];
+            self.rawData = [RoleInfoStreamDatasModel yy_modelWithJSON:json];
 
-            [weakSelf convertRawDataToDisplay];
+            [self convertRawDataToDisplay];
     
             dispatch_async(dispatch_get_main_queue(), ^{
-                [weakSelf.delegate infoStreamModel:self listRequestSuccess:YES];
+                [self.delegate infoStreamModel:self listRequestSuccess:YES];
             });
         });
     

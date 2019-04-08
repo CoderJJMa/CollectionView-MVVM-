@@ -17,6 +17,12 @@
 		3071C918225B3EDA00CC5935 /* InfoStreamViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C917225B3EDA00CC5935 /* InfoStreamViewModel.m */; };
 		3071C91D225B40DE00CC5935 /* InfoStreamFamilyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C91C225B40DE00CC5935 /* InfoStreamFamilyViewModel.m */; };
 		3071C920225B419A00CC5935 /* RoleInfoStreamDatasModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C91F225B419A00CC5935 /* RoleInfoStreamDatasModel.m */; };
+		3071C923225B507E00CC5935 /* InfoStreamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C922225B507E00CC5935 /* InfoStreamView.m */; };
+		3071C926225B52D800CC5935 /* InfoStreamRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C925225B52D800CC5935 /* InfoStreamRefreshHeader.m */; };
+		3071C929225B53F100CC5935 /* InfoStreamSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C928225B53F100CC5935 /* InfoStreamSectionModel.m */; };
+		3071C92C225B547C00CC5935 /* InfoStreamItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C92B225B547C00CC5935 /* InfoStreamItemModel.m */; };
+		3071C92F225B552400CC5935 /* InfoStreamCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C92E225B552400CC5935 /* InfoStreamCollectionViewCell.m */; };
+		3071C932225B57FF00CC5935 /* UIView+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C931225B57FE00CC5935 /* UIView+FLKit.m */; };
 		4796A592A80DB6F5C939C009 /* Pods_CollectionViewDemo_MVVM_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7142B1C712E1D4864C3C72A3 /* Pods_CollectionViewDemo_MVVM_.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +47,18 @@
 		3071C91C225B40DE00CC5935 /* InfoStreamFamilyViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamFamilyViewModel.m; sourceTree = "<group>"; };
 		3071C91E225B419A00CC5935 /* RoleInfoStreamDatasModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoleInfoStreamDatasModel.h; sourceTree = "<group>"; };
 		3071C91F225B419A00CC5935 /* RoleInfoStreamDatasModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoleInfoStreamDatasModel.m; sourceTree = "<group>"; };
+		3071C921225B507E00CC5935 /* InfoStreamView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamView.h; sourceTree = "<group>"; };
+		3071C922225B507E00CC5935 /* InfoStreamView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamView.m; sourceTree = "<group>"; };
+		3071C924225B52D800CC5935 /* InfoStreamRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamRefreshHeader.h; sourceTree = "<group>"; };
+		3071C925225B52D800CC5935 /* InfoStreamRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamRefreshHeader.m; sourceTree = "<group>"; };
+		3071C927225B53F100CC5935 /* InfoStreamSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamSectionModel.h; sourceTree = "<group>"; };
+		3071C928225B53F100CC5935 /* InfoStreamSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamSectionModel.m; sourceTree = "<group>"; };
+		3071C92A225B547C00CC5935 /* InfoStreamItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamItemModel.h; sourceTree = "<group>"; };
+		3071C92B225B547C00CC5935 /* InfoStreamItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamItemModel.m; sourceTree = "<group>"; };
+		3071C92D225B552400CC5935 /* InfoStreamCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamCollectionViewCell.h; sourceTree = "<group>"; };
+		3071C92E225B552400CC5935 /* InfoStreamCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamCollectionViewCell.m; sourceTree = "<group>"; };
+		3071C930225B57FE00CC5935 /* UIView+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FLKit.h"; sourceTree = "<group>"; };
+		3071C931225B57FE00CC5935 /* UIView+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLKit.m"; sourceTree = "<group>"; };
 		65A1E31BEC563E2AAF4FC991 /* Pods-CollectionViewDemo(MVVM).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewDemo(MVVM).release.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionViewDemo(MVVM)/Pods-CollectionViewDemo(MVVM).release.xcconfig"; sourceTree = "<group>"; };
 		7142B1C712E1D4864C3C72A3 /* Pods_CollectionViewDemo_MVVM_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionViewDemo_MVVM_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,6 +141,12 @@
 		3071C90C225B3AD600CC5935 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3071C921225B507E00CC5935 /* InfoStreamView.h */,
+				3071C922225B507E00CC5935 /* InfoStreamView.m */,
+				3071C924225B52D800CC5935 /* InfoStreamRefreshHeader.h */,
+				3071C925225B52D800CC5935 /* InfoStreamRefreshHeader.m */,
+				3071C92D225B552400CC5935 /* InfoStreamCollectionViewCell.h */,
+				3071C92E225B552400CC5935 /* InfoStreamCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,6 +156,10 @@
 			children = (
 				3071C91E225B419A00CC5935 /* RoleInfoStreamDatasModel.h */,
 				3071C91F225B419A00CC5935 /* RoleInfoStreamDatasModel.m */,
+				3071C927225B53F100CC5935 /* InfoStreamSectionModel.h */,
+				3071C928225B53F100CC5935 /* InfoStreamSectionModel.m */,
+				3071C92A225B547C00CC5935 /* InfoStreamItemModel.h */,
+				3071C92B225B547C00CC5935 /* InfoStreamItemModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +180,8 @@
 		3071C914225B3DB900CC5935 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3071C930225B57FE00CC5935 /* UIView+FLKit.h */,
+				3071C931225B57FE00CC5935 /* UIView+FLKit.m */,
 				3071C915225B3DC500CC5935 /* Common.h */,
 			);
 			path = Common;
@@ -259,11 +289,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CollectionViewDemo(MVVM)/Pods-CollectionViewDemo(MVVM)-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
@@ -279,9 +311,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3071C92C225B547C00CC5935 /* InfoStreamItemModel.m in Sources */,
 				3071C918225B3EDA00CC5935 /* InfoStreamViewModel.m in Sources */,
+				3071C923225B507E00CC5935 /* InfoStreamView.m in Sources */,
 				3071C920225B419A00CC5935 /* RoleInfoStreamDatasModel.m in Sources */,
 				3071C91D225B40DE00CC5935 /* InfoStreamFamilyViewModel.m in Sources */,
+				3071C929225B53F100CC5935 /* InfoStreamSectionModel.m in Sources */,
+				3071C92F225B552400CC5935 /* InfoStreamCollectionViewCell.m in Sources */,
+				3071C932225B57FF00CC5935 /* UIView+FLKit.m in Sources */,
+				3071C926225B52D800CC5935 /* InfoStreamRefreshHeader.m in Sources */,
 				3071C911225B3B1500CC5935 /* InfoStreamViewController.m in Sources */,
 				3071C904225B377C00CC5935 /* main.m in Sources */,
 				3071C8F6225B377B00CC5935 /* AppDelegate.m in Sources */,
