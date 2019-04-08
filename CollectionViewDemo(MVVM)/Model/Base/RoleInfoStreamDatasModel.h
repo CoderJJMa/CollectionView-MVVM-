@@ -39,4 +39,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , strong) NSArray<RoleInfoStreamDatasBehavior *>      * behavior;//行为
 @end
 
+
+@interface InfoStreamSrcFamilyDatasModel :NSObject
+@property(nonatomic, assign)NSInteger routerCount; //路由器数量
+@end
+
 NS_ASSUME_NONNULL_END

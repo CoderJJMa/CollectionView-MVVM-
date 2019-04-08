@@ -15,7 +15,8 @@
 
 - (void)requestListWithRouter:(NSDictionary *)parmar{
     
-    __weak typeof(self) weakSelf = self;
+//    __weak typeof(self) weakSelf = self;
+
 //    模拟数据
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             NSBundle * bunndle = [NSBundle mainBundle];
@@ -74,6 +75,46 @@
     self.infoCards = sections;
     
 }
+
+//- (void)setFreshDisplayData {
+//    NSMutableArray<InfoStreamFamilySectionModel*> *sections = [NSMutableArray new];
+//
+//    //header
+//    {
+//        InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
+//        [sec setModelWithData:_rawData logicalType:InfoStreamFamilySectionLogicalType_Header sectionStyle:InfoStreamSectionStyleContentOnly];
+//        [sections addObject:sec];
+//    }
+//
+//    //开始守护
+//    {
+//        InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
+//        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_BeginProtection sectionStyle:InfoStreamSectionStyleContentOnly];
+//        [sections addObject:sec];
+//    }
+//
+//    //绑定微信
+//    {
+//        InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
+//        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_BoundingWechat sectionStyle:InfoStreamSectionStyleContentOnly];
+//        [sections addObject:sec];
+//    }
+//
+//    //点亮守护计划
+//    {
+//        InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
+//        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_LightProtection sectionStyle:InfoStreamSectionStyleContentOnly];
+//        [sections addObject:sec];
+//    }
+//
+//    //恭喜您
+//    {
+//        InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
+//        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_Congratulation sectionStyle:InfoStreamSectionStyleContentOnly];
+//        [sections addObject:sec];
+//    }
+//    self.infoCards = sections;
+//}
 
 - (InfoStreamFamilySectionModel*)sectionModelWithIndexPath:(NSIndexPath*)path {
     if (path.row >= self.infoCards.count) return nil;

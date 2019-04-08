@@ -36,5 +36,25 @@
 
 @implementation RoleInfoStreamDatasModel
 
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{
+             @"family" : @"family",
+             @"folks": @"folk_list"
+             };
+}
 
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{
+             @"folks" :[RoleInfoStreamDatasFolkInfo class]
+             };
+}
+
+@end
+
+@implementation InfoStreamSrcFamilyDatasModel
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{
+             @"routerCount" : @"router_cnt"
+             };
+}
 @end

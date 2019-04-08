@@ -54,12 +54,11 @@ static NSString *kInfoStreamCollectionFooterView = @"InfoStreamCollectionFooterV
     }];
     self.collectionView.mj_header = _headerRefreshView;
 
-    _footerRefreshView = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(onLoadMore)];
-    _footerRefreshView.stateLabel.font = [UIFont systemFontOfSize:13];
-    _footerRefreshView.stateLabel.textColor = [UIColor lightGrayColor];
-    [_footerRefreshView setTitle:@"There'sNoMoreMessages" forState:MJRefreshStateNoMoreData];
-    self.collectionView.mj_footer = _footerRefreshView;
-//         self.collectionView.mj_footer.hidden = YES;
+//    _footerRefreshView = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(onLoadMore)];
+//    _footerRefreshView.stateLabel.font = [UIFont systemFontOfSize:13];
+//    _footerRefreshView.stateLabel.textColor = [UIColor lightGrayColor];
+//    [_footerRefreshView setTitle:@"There'sNoMoreMessages" forState:MJRefreshStateNoMoreData];
+//    self.collectionView.mj_footer = _footerRefreshView;
 }
 
 - (UICollectionViewFlowLayout *)flowLayout

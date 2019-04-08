@@ -30,26 +30,26 @@ Class rawDataClassWithLogicalType(InfoStreamFamilySectionLogicalType logicalType
     self.sectionStyle = sectionStyle;
     
     if (logicalType == InfoStreamFamilySectionLogicalType_Header) {
-//        InfoStreamSrcFamilyDatasModel *rawData = (InfoStreamSrcFamilyDatasModel*)model;
-//        self.title = @"360家庭防火墙";
-//        self.subTitle = [NSString stringWithFormat:@"%d台防火墙正在守护您 的家人上网安全", (int)rawData.routerCount];
-//        InfoStreamFamilyItemModel *item = [InfoStreamFamilyItemModel new];
-//        item.infoStyle = InfoStreamItemStyleHeader;
-//        item.title = self.title;
-//        item.subtitle = self.subTitle;
-//        self.infos = @[item];
+        InfoStreamSrcFamilyDatasModel *rawData = (InfoStreamSrcFamilyDatasModel*)model;
+        self.title = @"360家庭防火墙";
+        self.subTitle = [NSString stringWithFormat:@"%d台防火墙正在守护您 的家人上网安全", (int)rawData.routerCount];
+        InfoStreamFamilyItemModel *item = [InfoStreamFamilyItemModel new];
+        item.infoStyle = InfoStreamItemStyleHeader;
+        item.title = self.title;
+        item.subtitle = self.subTitle;
+        self.infos = @[item];
         
     }else if (logicalType == InfoStreamFamilySectionLogicalType_Role) {
-//        SRgetRoleInfoStreamDatasFolkInfo *folk = (SRgetRoleInfoStreamDatasFolkInfo*)model;
-//        InfoStreamFamilyItemModel *item = [InfoStreamFamilyItemModel new];
-//        item.infoStyle = InfoStreamItemStyleRole;
-//        item.showIndicator = YES;
-//        item.icon = folk.titleIcon;
-//        item.title = folk.title;
-//        item.subtitle = folk.subtitle;
-//        item.desc = folk.desc;
-//        item.descType = folk.descType;
-//        self.infos = @[item];
+        RoleInfoStreamDatasFolkInfo *folk = (RoleInfoStreamDatasFolkInfo*)model;
+        InfoStreamFamilyItemModel *item = [InfoStreamFamilyItemModel new];
+        item.infoStyle = InfoStreamItemStyleRole;
+        item.showIndicator = YES;
+        item.icon = folk.titleIcon;
+        item.title = folk.title;
+        item.subtitle = folk.subtitle;
+        item.desc = folk.desc;
+        item.descType = folk.descType;
+        self.infos = @[item];
         
     }else if (logicalType == InfoStreamFamilySectionLogicalType_Message) {
         
