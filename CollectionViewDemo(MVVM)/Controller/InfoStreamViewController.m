@@ -1,25 +1,25 @@
 //
-//  ViewController.m
+//  InfoStreamViewController.m
 //  CollectionViewDemo(MVVM)
 //
 //  Created by majianjie on 2019/4/8.
 //  Copyright © 2019 majianjie. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "InfoStreamViewController.h"
 
-@interface ViewController ()
+
+@interface InfoStreamViewController ()
+
 
 @end
 
-@implementation ViewController
+@implementation InfoStreamViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
+  
 }
-
 
 @end
