@@ -16,4 +16,5 @@ FOUNDATION_EXPORT double CommonVersionNumber;
 FOUNDATION_EXPORT const unsigned char CommonVersionString[];
 
 #import <Masonry/Masonry.h>
+#import <YYModel/YYModel.h>
 
