@@ -58,17 +58,25 @@
 		3071C8F3225B377B00CC5935 /* CollectionViewDemo(MVVM) */ = {
 			isa = PBXGroup;
 			children = (
-				3071C8F4225B377B00CC5935 /* AppDelegate.h */,
-				3071C8F5225B377B00CC5935 /* AppDelegate.m */,
+				3071C90A225B3A0100CC5935 /* others */,
 				3071C8F7225B377B00CC5935 /* ViewController.h */,
 				3071C8F8225B377B00CC5935 /* ViewController.m */,
+				3071C902225B377C00CC5935 /* Info.plist */,
+			);
+			path = "CollectionViewDemo(MVVM)";
+			sourceTree = "<group>";
+		};
+		3071C90A225B3A0100CC5935 /* others */ = {
+			isa = PBXGroup;
+			children = (
+				3071C903225B377C00CC5935 /* main.m */,
 				3071C8FA225B377B00CC5935 /* Main.storyboard */,
 				3071C8FD225B377C00CC5935 /* Assets.xcassets */,
 				3071C8FF225B377C00CC5935 /* LaunchScreen.storyboard */,
-				3071C902225B377C00CC5935 /* Info.plist */,
-				3071C903225B377C00CC5935 /* main.m */,
+				3071C8F4225B377B00CC5935 /* AppDelegate.h */,
+				3071C8F5225B377B00CC5935 /* AppDelegate.m */,
 			);
-			path = "CollectionViewDemo(MVVM)";
+			path = others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,12 +294,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39W3T8GR9Y;
 				INFOPLIST_FILE = "CollectionViewDemo(MVVM)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.default.CollectionViewDemo-MVVM-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.default.CollectionViewMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,12 +312,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39W3T8GR9Y;
 				INFOPLIST_FILE = "CollectionViewDemo(MVVM)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.default.CollectionViewDemo-MVVM-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.default.CollectionViewMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
