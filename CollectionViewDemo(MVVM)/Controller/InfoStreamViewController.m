@@ -67,11 +67,11 @@
     
     if (sec.logicalType == InfoStreamFamilySectionLogicalType_Role)
     {
-//        if ([sec.rawData isKindOfClass:[SRgetRoleInfoStreamDatasFolkInfo class]]) {
-//            SRgetRoleInfoStreamDatasFolkInfo *folk = (SRgetRoleInfoStreamDatasFolkInfo*)sec.rawData;
-            //            SRDevManageViewController *controller = [[SRDevManageViewController alloc] init];
-            //            [self.fl_navigationController pushViewController:controller animated:NO];
-//        }
+        if ([sec.rawData isKindOfClass:[RoleInfoStreamDatasFolkInfo class]]) {
+            RoleInfoStreamDatasFolkInfo *folk = (RoleInfoStreamDatasFolkInfo*)sec.rawData;
+//                        SRDevManageViewController *controller = [[SRDevManageViewController alloc] init];
+//                        [self.fl_navigationController pushViewController:controller animated:NO];
+        }
         
     }else if (sec.logicalType == InfoStreamFamilySectionLogicalType_Message) {
         InfoStreamItemModel *item = [sec.infos objectAtIndex:indexPath.row];

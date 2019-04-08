@@ -8,6 +8,7 @@
 
 #import "InfoStreamFamilySectionModel.h"
 #import "InfoStreamFamilyItemModel.h"
+#import "RoleInfoStreamDatasModel.h"
 
 
 Class rawDataClassWithLogicalType(InfoStreamFamilySectionLogicalType logicalType) {
@@ -51,6 +52,7 @@ Class rawDataClassWithLogicalType(InfoStreamFamilySectionLogicalType logicalType
 //        self.infos = @[item];
         
     }else if (logicalType == InfoStreamFamilySectionLogicalType_Message) {
+        
         RoleInfoStreamDatasBehavior *tinfo = (RoleInfoStreamDatasBehavior*)model;
         
         NSMutableArray *sections = [NSMutableArray array];
@@ -140,5 +142,5 @@ Class rawDataClassWithLogicalType(InfoStreamFamilySectionLogicalType logicalType
 
 
 
-@implementation RoleInfoStreamDatasBehavior
-@end
+//@implementation RoleInfoStreamDatasBehavior
+//@end

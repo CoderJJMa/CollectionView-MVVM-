@@ -8,6 +8,33 @@
 
 #import "RoleInfoStreamDatasModel.h"
 
+
+
+@implementation RoleInfoStreamDatasBehavior
+@end
+
+
+@implementation RoleInfoStreamDatasFolkInfo
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{
+             @"folkId" : @"folk_id",
+             @"roleIndex" : @"role",
+             @"roleName" : @"name",
+             @"titleIcon" : @"icon",
+             @"descType" : @"type",
+             @"behavior": @"event_list"
+             };
+}
+
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{
+             @"behavior" :[RoleInfoStreamDatasBehavior class]
+             };
+}
+@end
+
+
 @implementation RoleInfoStreamDatasModel
+
 
 @end

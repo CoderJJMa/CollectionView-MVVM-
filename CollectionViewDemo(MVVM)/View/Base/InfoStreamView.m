@@ -10,6 +10,7 @@
 #import "InfoStreamRefreshHeader.h"
 #import "InfoStreamSectionModel.h"
 #import "InfoStreamCollectionViewCell.h"
+#import "InfoStreamCollectionHeaderView.h"
 
 static NSString *kInfoStreamCollectionViewCell = @"InfoStreamCollectionViewCell";
 static NSString *kInfoStreamCollectionHeaderView = @"InfoStreamCollectionHeaderView";
@@ -77,8 +78,8 @@ static NSString *kInfoStreamCollectionFooterView = @"InfoStreamCollectionFooterV
 
 - (void)registerCollectionCells
 {
-//    [self.collectionView registerClass:[InfoStreamCollectionViewCell class] forCellWithReuseIdentifier:@"InfoStreamCollectionViewCell"];
-//    [self.collectionView registerClass:[InfoStreamCollectionHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"kInfoStreamCollectionHeaderView"];
+    [self.collectionView registerClass:[InfoStreamCollectionViewCell class] forCellWithReuseIdentifier:@"InfoStreamCollectionViewCell"];
+    [self.collectionView registerClass:[InfoStreamCollectionHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"kInfoStreamCollectionHeaderView"];
 //    [self.collectionView registerClass:[InfoStreamCollectionFooterView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"kInfoStreamCollectionFooterView"];
     
     for (Class class in self.collectionViewCells.allValues) {

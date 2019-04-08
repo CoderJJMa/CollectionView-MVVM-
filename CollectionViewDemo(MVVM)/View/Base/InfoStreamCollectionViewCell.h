@@ -30,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface InfoStreamCollectionViewCell : UICollectionViewCell<InfoStreamCollectionViewCellProcotol>
 
+//@property (nonatomic, copy) InfoStreamActionHandler actionBlock;
 @property (nonatomic, assign) UIEdgeInsets separatorInset;
 @property (nonatomic, assign) BOOL separatorHidden;
 @property (nonatomic, strong) InfoStreamItemModel *info;

@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "InfoStreamProtocol.h"
+#import "InfoStreamSectionModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @class InfoStreamSectionModel;
+
 @interface InfoStreamViewModel : NSObject
 
 @property (nonatomic, strong) NSArray<InfoStreamSectionModel*> *infoCards;

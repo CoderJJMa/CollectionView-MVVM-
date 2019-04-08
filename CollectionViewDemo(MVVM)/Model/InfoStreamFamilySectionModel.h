@@ -37,14 +37,14 @@ extern Class rawDataClassWithLogicalType(InfoStreamFamilySectionLogicalType logi
 
 
 
-@interface RoleInfoStreamDatasBehavior :NSObject
-@property (nonatomic , copy) NSString              * icon;
-@property (nonatomic , copy) NSString              * title;//使用了QQ
-@property (nonatomic , copy) NSString              * subtitle1;//2周前
-@property (nonatomic , copy) NSString              * subtitle2;//来自一加手机4
-@property (nonatomic , copy) NSString              * desc;
-@property (nonatomic, assign) long long             time; //时间戳
-@end
+//@interface RoleInfoStreamDatasBehavior :NSObject
+//@property (nonatomic , copy) NSString              * icon;
+//@property (nonatomic , copy) NSString              * title;//使用了QQ
+//@property (nonatomic , copy) NSString              * subtitle1;//2周前
+//@property (nonatomic , copy) NSString              * subtitle2;//来自一加手机4
+//@property (nonatomic , copy) NSString              * desc;
+//@property (nonatomic, assign) long long             time; //时间戳
+//@end
 
 
 NS_ASSUME_NONNULL_END
