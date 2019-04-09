@@ -15,14 +15,6 @@
                 },
                 {
                     "subtitle2": "来自荣耀平板电脑7320",
-                    "title": "使用了酷狗音乐",
-                    "icon": "https:\/\/p426.ssl.qhimgs4.com\/t0108203476585c9a8e.png?size=144x144",
-                    "subtitle1": "03-2913:31",
-                    "desc": "儿子13:30开始使用酷狗音乐，本次共使用10分钟",
-                    "time": 1553837445
-                },
-                {
-                    "subtitle2": "来自荣耀平板电脑7320",
                     "title": "使用了宝宝巴士奇妙屋",
                     "icon": "https:\/\/p426.ssl.qhimgs4.com\/t010cc39246b31bd73f.png?size=144x144",
                     "subtitle1": "03-2819:35",
@@ -180,7 +172,32 @@
                     "subtitle1": "02-0712:16",
                     "desc": "儿子12:14开始使用今日头条，本次共使用31分钟",
                     "time": 1549512889
-                },
+                }
+            ],
+            "role": "1",
+            "title": "儿子的一天",
+            "type": 1,
+            "icon": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2105163188,1247728345&fm=26&gp=0.jpg",
+            "name": "儿子"
+        },
+        {
+            "desc": "今天gg的手机还没有上网，最近24小时内也没有沉迷上网的情况，请放心。",
+            "folk_id": "97",
+            "subtitle": "今日未上网",
+            "event_list": [
+                
+            ],
+            "role": "7",
+            "title": "gg的一天",
+            "type": 1,
+            "icon": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554747635458&di=cfba24ee2bb6b59c068ffa5381deb78e&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01185f586f75e4a8012060c80f1a44.jpg",
+            "name": "gg"
+        },
+        {
+            "desc": "今天bb的手机还没有上网，最近24小时内也没有沉迷上网的情况，请放心。",
+            "folk_id": "98",
+            "subtitle": "今日上网：47分钟",
+            "event_list": [
                 {
                     "subtitle2": "来自荣耀平板电脑7320",
                     "title": "使用了腾讯视频",
@@ -230,32 +247,6 @@
                     "time": 1549274820
                 }
             ],
-            "role": "1",
-            "title": "儿子的一天",
-            "type": 1,
-            "icon": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2105163188,1247728345&fm=26&gp=0.jpg",
-            "name": "儿子"
-        },
-        {
-            "desc": "今天gg的手机还没有上网，最近24小时内也没有沉迷上网的情况，请放心。",
-            "folk_id": "97",
-            "subtitle": "今日未上网",
-            "event_list": [
-                
-            ],
-            "role": "7",
-            "title": "gg的一天",
-            "type": 1,
-            "icon": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554747635458&di=cfba24ee2bb6b59c068ffa5381deb78e&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01185f586f75e4a8012060c80f1a44.jpg",
-            "name": "gg"
-        },
-        {
-            "desc": "今天bb的手机还没有上网，最近24小时内也没有沉迷上网的情况，请放心。",
-            "folk_id": "98",
-            "subtitle": "今日未上网",
-            "event_list": [
-                
-            ],
             "role": "3",
             "title": "bb的一天",
             "type": 1,
@@ -278,7 +269,7 @@
         {
             "desc": "今天yy的手机还没有上网，最近24小时内也没有沉迷上网的情况，请放心。",
             "folk_id": "100",
-            "subtitle": "今日未上网",
+            "subtitle": "今日上网：4分钟",
             "event_list": [
                 {
                     "subtitle2": "来自锤子一一九",

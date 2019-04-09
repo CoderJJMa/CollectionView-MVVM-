@@ -121,7 +121,7 @@ static NSString *kInfoStreamCollectionFooterView = @"InfoStreamCollectionFooterV
     }
     
     if(NO) {
-        [self.footerRefreshView endRefreshing];
+//        [self.footerRefreshView endRefreshing];
     }else {
         [self.footerRefreshView endRefreshingWithNoMoreData];
     }
