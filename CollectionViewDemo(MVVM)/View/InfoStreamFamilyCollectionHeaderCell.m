@@ -4,7 +4,7 @@
 //
 //  Created by majianjie on 2019/4/3.
 //  Copyright © 2019 360. All rights reserved.
-//
+// 
 
 #import "InfoStreamFamilyCollectionHeaderCell.h"
 #import "InfoStreamFamilyItemModel.h"
@@ -61,24 +61,20 @@
 
 }
 
-
 - (void)updateInfo:(InfoStreamItemModel *)info {
     InfoStreamFamilyItemModel *model = (InfoStreamFamilyItemModel*)info;
     self.contentLabel.text = model.title;
 }
 
-
-
 + (CGSize)sizeForItem:(InfoStreamItemModel *)info
 {
-    return CGSizeMake(ScreenWidth, 100);
-//    SRXInfoStreamFamilyItemModel *model = (SRXInfoStreamFamilyItemModel*)info;
-//    NSString *content = model.desc;
-//
-//    int height = 110;
-//    CGRect rect = [content boundingRectWithSize:CGSizeMake(ScreenWidth - 86, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:BOLD_FONT(16)} context:nil];
-//    height += rect.size.height;
-//    return CGSizeMake(ScreenWidth - 86, height);
+    InfoStreamFamilyItemModel *model = (InfoStreamFamilyItemModel*)info;
+    NSString *content = model.desc;
+
+    int height = 80;
+    CGRect rect = [content boundingRectWithSize:CGSizeMake(ScreenWidth , MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:16]} context:nil];
+    height += rect.size.height;
+    return CGSizeMake(ScreenWidth , height);
 }
 
 @end

@@ -1,6 +1,5 @@
 //
-//  SRXInfoStreamFamilyCollectionFooterCell.h
-//  SecurityRouterLib
+//  InfoStreamFamilyCollectionFooterCell.h
 //
 //  Created by majianjie on 2019/4/3.
 //  Copyright © 2019 360. All rights reserved.

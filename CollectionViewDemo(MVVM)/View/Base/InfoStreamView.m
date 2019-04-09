@@ -138,13 +138,13 @@ static NSString *kInfoStreamCollectionFooterView = @"InfoStreamCollectionFooterV
     InfoStreamCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(class) forIndexPath:indexPath];
 
     __weak typeof(self) weakSelf = self;
-//    cell.actionBlock = ^(InfoStreamActionType actionType, id value) {
-//        if ([weakSelf.delegate respondsToSelector:@selector(infoStreamView:didSelectSectionOfActionType:andValue:atIndex:)]) {
-//            [weakSelf.delegate infoStreamView:weakSelf didSelectSectionOfActionType:actionType andValue:value atIndex:indexPath];
-//        }
-//    };
+    cell.actionBlock = ^(InfoStreamActionType actionType, id value) {
+        if ([weakSelf.delegate respondsToSelector:@selector(infoStreamView:didSelectSectionOfActionType:andValue:atIndex:)]) {
+            [weakSelf.delegate infoStreamView:weakSelf didSelectSectionOfActionType:actionType andValue:value atIndex:indexPath];
+        }
+    };
 
-//    cell.cornerType = InfoStreamCellRoundedCornerTypeNone;
+    cell.cornerType = InfoStreamCellRoundedCornerTypeNone;
 
     [cell updateInfo:info];
 
