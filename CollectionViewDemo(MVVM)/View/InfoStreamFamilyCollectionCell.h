@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "InfoStreamCollectionViewCell.h"
+#import "InfoStreamBaseCollectionViewCell.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface InfoStreamFamilyCollectionCell : InfoStreamCollectionViewCell
+@interface InfoStreamFamilyCollectionCell : InfoStreamBaseCollectionViewCell
 
 //@property (nonatomic,strong)DataModel *model;
 

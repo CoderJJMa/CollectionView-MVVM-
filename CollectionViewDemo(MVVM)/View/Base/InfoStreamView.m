@@ -9,7 +9,7 @@
 #import "InfoStreamView.h"
 #import "InfoStreamRefreshHeader.h"
 #import "InfoStreamSectionModel.h"
-#import "InfoStreamCollectionViewCell.h"
+#import "InfoStreamBaseCollectionViewCell.h"
 #import "InfoStreamCollectionReusableView.h"
 
 static NSString *kInfoStreamCollectionViewCell = @"InfoStreamCollectionViewCell";
@@ -77,7 +77,7 @@ static NSString *kInfoStreamCollectionFooterView = @"InfoStreamCollectionFooterV
 
 - (void)registerCollectionCells
 {
-    [self.collectionView registerClass:[InfoStreamCollectionViewCell class] forCellWithReuseIdentifier:@"InfoStreamCollectionViewCell"];
+    [self.collectionView registerClass:[InfoStreamBaseCollectionViewCell class] forCellWithReuseIdentifier:@"InfoStreamCollectionViewCell"];
     [self.collectionView registerClass:[InfoStreamCollectionReusableViewHeader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"kInfoStreamCollectionHeaderView"];
     [self.collectionView registerClass:[InfoStreamCollectionReusableViewFooter class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"kInfoStreamCollectionFooterView"];
     
@@ -133,9 +133,9 @@ static NSString *kInfoStreamCollectionFooterView = @"InfoStreamCollectionFooterV
     InfoStreamItemModel *info = section.infos[indexPath.row];
     Class class = [self.collectionViewCells objectForKey:@(info.infoStyle)];
     if (!class) {
-        class = [InfoStreamCollectionViewCell class];
+        class = [InfoStreamBaseCollectionViewCell class];
     }
-    InfoStreamCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(class) forIndexPath:indexPath];
+    InfoStreamBaseCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(class) forIndexPath:indexPath];
 
     __weak typeof(self) weakSelf = self;
     cell.actionBlock = ^(InfoStreamActionType actionType, id value) {
@@ -190,7 +190,7 @@ static NSString *kInfoStreamCollectionFooterView = @"InfoStreamCollectionFooterV
     InfoStreamItemModel *info = card.infos[indexPath.row];
     Class class = [self.collectionViewCells objectForKey:@(info.infoStyle)];
     if (!class) {
-        class = [InfoStreamCollectionViewCell class];
+        class = [InfoStreamBaseCollectionViewCell class];
     }
     if ([class respondsToSelector:@selector(sizeForItem:)]) {
         return [class sizeForItem: info];

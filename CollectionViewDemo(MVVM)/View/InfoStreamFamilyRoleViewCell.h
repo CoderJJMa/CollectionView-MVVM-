@@ -6,11 +6,11 @@
 //  Copyright © 2019 360. All rights reserved.
 //
 
-#import "InfoStreamCollectionViewCell.h"
+#import "InfoStreamBaseCollectionViewCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface InfoStreamFamilyRoleViewCell : InfoStreamCollectionViewCell
+@interface InfoStreamFamilyRoleViewCell : InfoStreamBaseCollectionViewCell
 
 @end
 

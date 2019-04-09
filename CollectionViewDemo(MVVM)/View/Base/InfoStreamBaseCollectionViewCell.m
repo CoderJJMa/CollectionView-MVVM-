@@ -6,18 +6,18 @@
 //  Copyright © 2019 majianjie. All rights reserved.
 //
 
-#import "InfoStreamCollectionViewCell.h"
+#import "InfoStreamBaseCollectionViewCell.h"
 #import "Common.h"
 #import "InfoStreamItemModel.h"
 
-@interface InfoStreamCollectionViewCell()
+@interface InfoStreamBaseCollectionViewCell()
 
 @property (nonatomic, strong) UIView* topLine;
 
 
 @end
 
-@implementation InfoStreamCollectionViewCell
+@implementation InfoStreamBaseCollectionViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

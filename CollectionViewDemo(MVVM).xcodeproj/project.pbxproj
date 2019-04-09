@@ -21,7 +21,7 @@
 		3071C926225B52D800CC5935 /* InfoStreamRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C925225B52D800CC5935 /* InfoStreamRefreshHeader.m */; };
 		3071C929225B53F100CC5935 /* InfoStreamSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C928225B53F100CC5935 /* InfoStreamSectionModel.m */; };
 		3071C92C225B547C00CC5935 /* InfoStreamItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C92B225B547C00CC5935 /* InfoStreamItemModel.m */; };
-		3071C92F225B552400CC5935 /* InfoStreamCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C92E225B552400CC5935 /* InfoStreamCollectionViewCell.m */; };
+		3071C92F225B552400CC5935 /* InfoStreamBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C92E225B552400CC5935 /* InfoStreamBaseCollectionViewCell.m */; };
 		3071C932225B57FF00CC5935 /* UIView+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C931225B57FE00CC5935 /* UIView+FLKit.m */; };
 		3071C935225B5D4000CC5935 /* InfoStreamCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C934225B5D4000CC5935 /* InfoStreamCollectionReusableView.m */; };
 		3071C93A225B5E5900CC5935 /* InfoStreamFamilySectionHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C936225B5E5800CC5935 /* InfoStreamFamilySectionHeaderCell.m */; };
@@ -64,8 +64,8 @@
 		3071C928225B53F100CC5935 /* InfoStreamSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamSectionModel.m; sourceTree = "<group>"; };
 		3071C92A225B547C00CC5935 /* InfoStreamItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamItemModel.h; sourceTree = "<group>"; };
 		3071C92B225B547C00CC5935 /* InfoStreamItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamItemModel.m; sourceTree = "<group>"; };
-		3071C92D225B552400CC5935 /* InfoStreamCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamCollectionViewCell.h; sourceTree = "<group>"; };
-		3071C92E225B552400CC5935 /* InfoStreamCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamCollectionViewCell.m; sourceTree = "<group>"; };
+		3071C92D225B552400CC5935 /* InfoStreamBaseCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamBaseCollectionViewCell.h; sourceTree = "<group>"; };
+		3071C92E225B552400CC5935 /* InfoStreamBaseCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamBaseCollectionViewCell.m; sourceTree = "<group>"; };
 		3071C930225B57FE00CC5935 /* UIView+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FLKit.h"; sourceTree = "<group>"; };
 		3071C931225B57FE00CC5935 /* UIView+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLKit.m"; sourceTree = "<group>"; };
 		3071C933225B5D4000CC5935 /* InfoStreamCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamCollectionReusableView.h; sourceTree = "<group>"; };
@@ -229,8 +229,8 @@
 				3071C922225B507E00CC5935 /* InfoStreamView.m */,
 				3071C924225B52D800CC5935 /* InfoStreamRefreshHeader.h */,
 				3071C925225B52D800CC5935 /* InfoStreamRefreshHeader.m */,
-				3071C92D225B552400CC5935 /* InfoStreamCollectionViewCell.h */,
-				3071C92E225B552400CC5935 /* InfoStreamCollectionViewCell.m */,
+				3071C92D225B552400CC5935 /* InfoStreamBaseCollectionViewCell.h */,
+				3071C92E225B552400CC5935 /* InfoStreamBaseCollectionViewCell.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -386,7 +386,7 @@
 				3071C91D225B40DE00CC5935 /* InfoStreamFamilyViewModel.m in Sources */,
 				3085E3F8225C432300B5B8B6 /* InfoStreamFamilyHeaderCell.m in Sources */,
 				3071C929225B53F100CC5935 /* InfoStreamSectionModel.m in Sources */,
-				3071C92F225B552400CC5935 /* InfoStreamCollectionViewCell.m in Sources */,
+				3071C92F225B552400CC5935 /* InfoStreamBaseCollectionViewCell.m in Sources */,
 				3071C932225B57FF00CC5935 /* UIView+FLKit.m in Sources */,
 				3071C94C225B6F4B00CC5935 /* InfoStreamFamilyCollectionCell.m in Sources */,
 				3071C926225B52D800CC5935 /* InfoStreamRefreshHeader.m in Sources */,
