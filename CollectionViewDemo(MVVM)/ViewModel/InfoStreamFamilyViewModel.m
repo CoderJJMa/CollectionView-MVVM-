@@ -11,7 +11,7 @@
 #import "InfoStreamFamilySectionModel.h"
 #import "RoleInfoStreamDatasModel.h"
 
-#define PublicConfig
+//#define PublicConfig
 
 @implementation InfoStreamFamilyViewModel
 
