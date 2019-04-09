@@ -13,6 +13,7 @@
 #import "InfoStreamFamilySectionFooterCell.h"
 #import "InfoStreamFamilyHeaderCell.h"
 #import "InfoStreamFamilyCongratulationCell.h"
+#import "InfoStreamFamilyWechatCell.h"
 
 #define kInfoStreamFamilyMargin 0
 
@@ -62,7 +63,8 @@
              @(InfoStreamItemStyleSectionHeader): [InfoStreamFamilySectionHeaderCell class],
              @(InfoStreamItemStyleSectionFooter): [InfoStreamFamilySectionFooterCell class],
              @(InfoStreamItemStyleHeader): [InfoStreamFamilyHeaderCell class],
-             @(InfoStreamItemStyleCongratulation): [InfoStreamFamilyCongratulationCell class],
+             @(InfoStreamItemStyleCongratulation): [InfoStreamFamilyCongratulationCell class],// 恭喜
+             @(InfoStreamItemStyleWechat): [InfoStreamFamilyWechatCell class],
              };
 }
 

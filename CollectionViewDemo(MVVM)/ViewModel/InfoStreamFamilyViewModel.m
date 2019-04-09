@@ -96,25 +96,25 @@
     }
 
     //开始守护
-//    {
-//        InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
-//        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_BeginProtection sectionStyle:InfoStreamSectionStyleContentOnly];
-//        [sections addObject:sec];
-//    }
-//
-//    //绑定微信
-//    {
-//        InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
-//        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_BoundingWechat sectionStyle:InfoStreamSectionStyleContentOnly];
-//        [sections addObject:sec];
-//    }
-//
-//    //点亮守护计划
-//    {
-//        InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
-//        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_LightProtection sectionStyle:InfoStreamSectionStyleContentOnly];
-//        [sections addObject:sec];
-//    }
+    {
+        InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
+        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_BeginProtection sectionStyle:InfoStreamSectionStyleContentOnly];
+        [sections addObject:sec];
+    }
+
+    //绑定微信
+    {
+        InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
+        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_BoundingWechat sectionStyle:InfoStreamSectionStyleContentOnly];
+        [sections addObject:sec];
+    }
+
+    //点亮守护计划
+    {
+        InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
+        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_LightProtection sectionStyle:InfoStreamSectionStyleContentOnly];
+        [sections addObject:sec];
+    }
 
     //恭喜您
     {

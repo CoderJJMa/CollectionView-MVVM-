@@ -81,6 +81,14 @@
         }else{
             [self toast:@"点击了消息类型中的message"];
         }
+    }else if (sec.logicalType ==InfoStreamFamilySectionLogicalType_BeginProtection ){
+        [self toast:@"点击了开始守护"];
+    }else if (sec.logicalType ==InfoStreamFamilySectionLogicalType_BoundingWechat ){
+        [self toast:@"点击了绑定微信"];
+    }else if (sec.logicalType ==InfoStreamFamilySectionLogicalType_LightProtection ){
+        [self toast:@"点击了点亮守护"];
+    }else if (sec.logicalType ==InfoStreamFamilySectionLogicalType_Congratulation ){
+        [self toast:@"点击了恭喜"];
     }
     
     
