@@ -11,7 +11,7 @@
 #import "InfoStreamFamilyViewModel.h"
 #import "InfoStreamFamilyView.h"
 #import "InfoStreamFamilySectionModel.h"
-
+#import "MBProgressHUD+Text.h"
 
 @interface InfoStreamViewController ()<InfoStreamViewDelegate, InfoStreamProtocol>
 
@@ -68,19 +68,29 @@
     {
         if ([sec.rawData isKindOfClass:[RoleInfoStreamDatasFolkInfo class]]) {
             RoleInfoStreamDatasFolkInfo *folk = (RoleInfoStreamDatasFolkInfo*)sec.rawData;
-
+            [self toast:@"消息类型中的角色"];
         }
         
     }else if (sec.logicalType == InfoStreamFamilySectionLogicalType_Message) {
         InfoStreamItemModel *item = [sec.infos objectAtIndex:indexPath.row];
         if (item.infoStyle == InfoStreamItemStyleSectionHeader) {
-            //do nothing
-        }else {
-            
+            //do nothing  消息类型中的header
+            [self toast:@"消息类型中的header"];
+        }else  if (item.infoStyle == InfoStreamItemStyleSectionFooter){
+            [self toast:@"点击了查看详情报告"];
+        }else{
+            [self toast:@"点击了消息类型中的message"];
         }
     }
     
     
+}
+
+- (void)toast:(NSString *)toast{
+    [MBProgressHUD showMessage:toast toView:self.view];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideHUDForView:self.view];
+    });
 }
 
 //点击section header或者footer等的事件

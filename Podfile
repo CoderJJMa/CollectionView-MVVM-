@@ -7,5 +7,6 @@ target 'CollectionViewDemo(MVVM)' do
     pod 'YYModel'
     pod 'MJRefresh'
     pod 'SDWebImage'
-
+    pod 'MBProgressHUD'
+    
 end

@@ -18,10 +18,13 @@ FOUNDATION_EXPORT const unsigned char CommonVersionString[];
 #import <Masonry/Masonry.h>
 #import <YYModel/YYModel.h>
 #import <SDWebImage/UIImageView+WebCache.h>
-
+#import "MBProgressHUD.h"
 #import "UIView+FLKit.h"
 
 #define UIColorFromRGB(c)   [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:1.0]
+#define UIColorFromRGBA(c,a)        [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:a]
+
+
 #define ScreenWidth                 [[UIScreen mainScreen] bounds].size.width
 #define ScreenHeight                [[UIScreen mainScreen] bounds].size.height
 #define NavigationBarHeight       44.0f
@@ -63,3 +66,25 @@ typedef NS_ENUM(NSInteger, InfoStreamItemStyle) {
     InfoStreamItemStyleWechat, //开启守护，绑定微信，点亮守护计划共用该cell
     InfoStreamItemStyleCongratulation,//恭喜您样式
 };
+
+
+typedef enum InfoStream__tagHudType{
+    InfoStream_HudType_Info,
+    InfoStream_HudType_Warning,
+    InfoStream_HudType_Loading,
+    InfoStream_HudType_MsgLoading,//带文字。不带背景框
+    InfoStream_HudType_NormalMsgLoading,//带文字。带背景框。不带遮罩
+    InfoStream_HudType_CustomViewMsgLoading,//带文字。带背景框。带遮罩
+    InfoStream_HudType_Loading_Text_NOBG,
+    InfoStream_HudType_DefaultLoading,
+    InfoStream_HudType_FileBrowserWarning,
+    InfoStream_HudType_FileBrowserInfo,
+    InfoStream_HudType_LoadingAndText,
+    
+    
+}InfoStream_HudType;
+
+typedef enum InfoStream__tagHudPosition{
+    InfoStream_HudPosition_Center,
+    InfoStream_HudPosition_Buttom,
+}InfoStream_HudPosition;
