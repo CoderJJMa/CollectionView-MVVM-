@@ -96,7 +96,7 @@ Class rawDataClassWithLogicalType(InfoStreamFamilySectionLogicalType logicalType
               || logicalType == InfoStreamFamilySectionLogicalType_LightProtection
               || logicalType == InfoStreamFamilySectionLogicalType_Congratulation) {
         
-        [self constructCustomModelWithType:logicalType];
+        [self constructCustomModelWithType:logicalType];   
     }
     
 }
