@@ -6,13 +6,13 @@
 //  Copyright © 2019 majianjie. All rights reserved.
 //
 
-#import "InfoStreamFamilyCollectionCell.h"
+#import "InfoStreamFamilyMessageCollectionCell.h"
 #import "InfoStreamFamilyItemModel.h"
 
 
 #define kScreenWidth  [UIApplication sharedApplication].keyWindow.bounds.size.width
 
-@interface InfoStreamFamilyCollectionCell()
+@interface InfoStreamFamilyMessageCollectionCell()
 
 @property (nonatomic, strong)NSArray *data;
 
@@ -26,7 +26,7 @@
 
 @end
 
-@implementation InfoStreamFamilyCollectionCell
+@implementation InfoStreamFamilyMessageCollectionCell
 
 
 - (instancetype)initWithFrame:(CGRect)frame{

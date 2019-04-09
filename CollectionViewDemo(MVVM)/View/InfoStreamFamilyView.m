@@ -8,7 +8,7 @@
 
 #import "InfoStreamFamilyView.h"
 #import "InfoStreamFamilyRoleViewCell.h"
-#import "InfoStreamFamilyCollectionCell.h"
+#import "InfoStreamFamilyMessageCollectionCell.h"
 #import "InfoStreamFamilySectionHeaderCell.h"
 #import "InfoStreamFamilySectionFooterCell.h"
 #import "InfoStreamFamilyHeaderCell.h"
@@ -57,7 +57,7 @@
 - (NSDictionary *)collectionViewCells
 {
     return @{@(InfoStreamItemStyleRole): [InfoStreamFamilyRoleViewCell class],
-             @(InfoStreamItemStyleMessage): [InfoStreamFamilyCollectionCell class],
+             @(InfoStreamItemStyleMessage): [InfoStreamFamilyMessageCollectionCell class],
              @(InfoStreamItemStyleSectionHeader): [InfoStreamFamilySectionHeaderCell class],
              @(InfoStreamItemStyleSectionFooter): [InfoStreamFamilySectionFooterCell class],
              @(InfoStreamItemStyleHeader): [InfoStreamFamilyHeaderCell class],

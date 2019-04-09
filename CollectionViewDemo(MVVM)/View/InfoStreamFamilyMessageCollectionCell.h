@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface InfoStreamFamilyCollectionCell : InfoStreamBaseCollectionViewCell
+@interface InfoStreamFamilyMessageCollectionCell : InfoStreamBaseCollectionViewCell
 
 //@property (nonatomic,strong)DataModel *model;
 
