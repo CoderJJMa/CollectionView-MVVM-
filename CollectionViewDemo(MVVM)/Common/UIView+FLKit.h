@@ -1,11 +1,3 @@
-//
-//  UIView+FLKit.h
-//  smart
-//
-//  Created by jun on 16/5/10.
-//  Copyright © 2016年 ifenglian. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 @interface UIView (Utils)
