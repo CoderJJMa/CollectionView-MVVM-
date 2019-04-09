@@ -14,7 +14,19 @@ typedef void(^InfoStreamActionHandler)(InfoStreamActionType, _Nullable id);
 
 NS_ASSUME_NONNULL_BEGIN
 @class InfoStreamSectionModel;
-@interface InfoStreamCollectionHeaderView : UICollectionReusableView
+@interface InfoStreamCollectionReusableViewHeader : UICollectionReusableView
+
+@property (nonatomic, strong) UIView *contentView;
+
+@property (nonatomic, copy)InfoStreamActionHandler actionBlock;
+
+- (void)updateHeaderInfo:(InfoStreamSectionModel *)cardInfo;
+
+
+@end
+
+
+@interface InfoStreamCollectionReusableViewFooter : UICollectionReusableView
 
 @property (nonatomic, strong) UIView *contentView;
 

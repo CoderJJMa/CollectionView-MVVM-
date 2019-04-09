@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Common.h"
+
+typedef void(^InfoStreamActionHandler)(InfoStreamActionType, _Nullable id);
 
 typedef NS_ENUM(NSInteger, InfoStreamCellRoundedCornerType) {
     InfoStreamCellRoundedCornerTypeNone,
@@ -30,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface InfoStreamCollectionViewCell : UICollectionViewCell<InfoStreamCollectionViewCellProcotol>
 
-//@property (nonatomic, copy) InfoStreamActionHandler actionBlock;
+@property (nonatomic, copy) InfoStreamActionHandler actionBlock;
 @property (nonatomic, assign) UIEdgeInsets separatorInset;
 @property (nonatomic, assign) BOOL separatorHidden;
 @property (nonatomic, strong) InfoStreamItemModel *info;

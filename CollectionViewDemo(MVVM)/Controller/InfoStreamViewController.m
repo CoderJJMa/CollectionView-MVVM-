@@ -48,7 +48,6 @@
     self.model.delegate = self;
     
     [self.model requestListWithRouter:[NSDictionary dictionary]];
-
     
 }
 

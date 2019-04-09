@@ -10,7 +10,7 @@
 #import "InfoStreamRefreshHeader.h"
 #import "InfoStreamSectionModel.h"
 #import "InfoStreamCollectionViewCell.h"
-#import "InfoStreamCollectionHeaderView.h"
+#import "InfoStreamCollectionReusableView.h"
 
 static NSString *kInfoStreamCollectionViewCell = @"InfoStreamCollectionViewCell";
 static NSString *kInfoStreamCollectionHeaderView = @"InfoStreamCollectionHeaderView";
@@ -54,11 +54,11 @@ static NSString *kInfoStreamCollectionFooterView = @"InfoStreamCollectionFooterV
     }];
     self.collectionView.mj_header = _headerRefreshView;
 
-//    _footerRefreshView = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(onLoadMore)];
-//    _footerRefreshView.stateLabel.font = [UIFont systemFontOfSize:13];
-//    _footerRefreshView.stateLabel.textColor = [UIColor lightGrayColor];
-//    [_footerRefreshView setTitle:@"There'sNoMoreMessages" forState:MJRefreshStateNoMoreData];
-//    self.collectionView.mj_footer = _footerRefreshView;
+    _footerRefreshView = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(onLoadMore)];
+    _footerRefreshView.stateLabel.font = [UIFont systemFontOfSize:13];
+    _footerRefreshView.stateLabel.textColor = [UIColor lightGrayColor];
+    [_footerRefreshView setTitle:@"没有更多信息" forState:MJRefreshStateNoMoreData];
+    self.collectionView.mj_footer = _footerRefreshView;
 }
 
 - (UICollectionViewFlowLayout *)flowLayout
@@ -78,8 +78,8 @@ static NSString *kInfoStreamCollectionFooterView = @"InfoStreamCollectionFooterV
 - (void)registerCollectionCells
 {
     [self.collectionView registerClass:[InfoStreamCollectionViewCell class] forCellWithReuseIdentifier:@"InfoStreamCollectionViewCell"];
-    [self.collectionView registerClass:[InfoStreamCollectionHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"kInfoStreamCollectionHeaderView"];
-//    [self.collectionView registerClass:[InfoStreamCollectionFooterView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"kInfoStreamCollectionFooterView"];
+    [self.collectionView registerClass:[InfoStreamCollectionReusableViewHeader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"kInfoStreamCollectionHeaderView"];
+    [self.collectionView registerClass:[InfoStreamCollectionReusableViewFooter class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"kInfoStreamCollectionFooterView"];
     
     for (Class class in self.collectionViewCells.allValues) {
         [self.collectionView registerClass:class forCellWithReuseIdentifier:NSStringFromClass(class)];
