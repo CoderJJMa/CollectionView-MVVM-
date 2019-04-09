@@ -65,7 +65,7 @@
 {
     [super placeSubviews];
     
-    self.loadingImageView.center = CGPointMake(self.mj_w *0.5, self.mj_h *0.5);
+    self.loadingImageView.center = CGPointMake(self.mj_w *0.5, self.mj_h *0.4);
 }
 
 #pragma mark 监听控件的刷新状态

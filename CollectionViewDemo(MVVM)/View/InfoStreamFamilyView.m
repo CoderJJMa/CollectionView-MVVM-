@@ -68,7 +68,7 @@
         _bgTopView = [[UIView alloc] initWithFrame:CGRectMake(0, -NavAndStatusHeight, headerWidth, 250)];
         _bgTopView.backgroundColor  = [UIColor clearColor];
         
-        UIImageView *bgImg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sr_homepage_header"]];
+        UIImageView *bgImg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];//sr_homepage_header
         bgImg.frame = CGRectMake(0, 0, headerWidth, headerWidth * 75 / 73);
         bgImg.contentMode = UIViewContentModeScaleAspectFill;
         [_bgTopView addSubview:bgImg];
