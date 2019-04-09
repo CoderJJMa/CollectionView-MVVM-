@@ -5,10 +5,10 @@
 //  Copyright © 2019 360. All rights reserved.
 //
 
-#import "InfoStreamFamilyCollectionFooterCell.h"
+#import "InfoStreamFamilySectionFooterCell.h"
 #import "InfoStreamFamilyItemModel.h"
 
-@interface InfoStreamFamilyCollectionFooterCell()
+@interface InfoStreamFamilySectionFooterCell()
 
 @property (nonatomic,strong)UILabel *contentLabel;
 @property (nonatomic, strong) UIView *line;
@@ -16,7 +16,7 @@
 @end
 
 
-@implementation InfoStreamFamilyCollectionFooterCell
+@implementation InfoStreamFamilySectionFooterCell
 
 - (instancetype)initWithFrame:(CGRect)frame{
     

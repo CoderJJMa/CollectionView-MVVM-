@@ -9,8 +9,8 @@
 #import "InfoStreamFamilyView.h"
 #import "InfoStreamFamilyRoleViewCell.h"
 #import "InfoStreamFamilyCollectionCell.h"
-#import "InfoStreamFamilyCollectionHeaderCell.h"
-#import "InfoStreamFamilyCollectionFooterCell.h"
+#import "InfoStreamFamilySectionHeaderCell.h"
+#import "InfoStreamFamilySectionFooterCell.h"
 #import "InfoStreamFamilyHeaderCell.h"
 
 #define kInfoStreamFamilyMargin 0
@@ -58,8 +58,8 @@
 {
     return @{@(InfoStreamItemStyleRole): [InfoStreamFamilyRoleViewCell class],
              @(InfoStreamItemStyleMessage): [InfoStreamFamilyCollectionCell class],
-             @(InfoStreamItemStyleSectionHeader): [InfoStreamFamilyCollectionHeaderCell class],
-             @(InfoStreamItemStyleSectionFooter): [InfoStreamFamilyCollectionFooterCell class],
+             @(InfoStreamItemStyleSectionHeader): [InfoStreamFamilySectionHeaderCell class],
+             @(InfoStreamItemStyleSectionFooter): [InfoStreamFamilySectionFooterCell class],
              @(InfoStreamItemStyleHeader): [InfoStreamFamilyHeaderCell class],
              };
 }

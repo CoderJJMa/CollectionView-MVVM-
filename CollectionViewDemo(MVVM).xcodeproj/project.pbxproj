@@ -24,8 +24,8 @@
 		3071C92F225B552400CC5935 /* InfoStreamCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C92E225B552400CC5935 /* InfoStreamCollectionViewCell.m */; };
 		3071C932225B57FF00CC5935 /* UIView+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C931225B57FE00CC5935 /* UIView+FLKit.m */; };
 		3071C935225B5D4000CC5935 /* InfoStreamCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C934225B5D4000CC5935 /* InfoStreamCollectionReusableView.m */; };
-		3071C93A225B5E5900CC5935 /* InfoStreamFamilyCollectionHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C936225B5E5800CC5935 /* InfoStreamFamilyCollectionHeaderCell.m */; };
-		3071C93B225B5E5900CC5935 /* InfoStreamFamilyCollectionFooterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C937225B5E5800CC5935 /* InfoStreamFamilyCollectionFooterCell.m */; };
+		3071C93A225B5E5900CC5935 /* InfoStreamFamilySectionHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C936225B5E5800CC5935 /* InfoStreamFamilySectionHeaderCell.m */; };
+		3071C93B225B5E5900CC5935 /* InfoStreamFamilySectionFooterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C937225B5E5800CC5935 /* InfoStreamFamilySectionFooterCell.m */; };
 		3071C93E225B5EE100CC5935 /* InfoStreamFamilyItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C93D225B5EE100CC5935 /* InfoStreamFamilyItemModel.m */; };
 		3071C943225B601300CC5935 /* InfoStreamFamilyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C942225B601300CC5935 /* InfoStreamFamilyView.m */; };
 		3071C946225B60FA00CC5935 /* InfoStreamFamilySectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071C945225B60FA00CC5935 /* InfoStreamFamilySectionModel.m */; };
@@ -70,10 +70,10 @@
 		3071C931225B57FE00CC5935 /* UIView+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLKit.m"; sourceTree = "<group>"; };
 		3071C933225B5D4000CC5935 /* InfoStreamCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamCollectionReusableView.h; sourceTree = "<group>"; };
 		3071C934225B5D4000CC5935 /* InfoStreamCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamCollectionReusableView.m; sourceTree = "<group>"; };
-		3071C936225B5E5800CC5935 /* InfoStreamFamilyCollectionHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoStreamFamilyCollectionHeaderCell.m; sourceTree = "<group>"; };
-		3071C937225B5E5800CC5935 /* InfoStreamFamilyCollectionFooterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoStreamFamilyCollectionFooterCell.m; sourceTree = "<group>"; };
-		3071C938225B5E5800CC5935 /* InfoStreamFamilyCollectionFooterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoStreamFamilyCollectionFooterCell.h; sourceTree = "<group>"; };
-		3071C939225B5E5900CC5935 /* InfoStreamFamilyCollectionHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoStreamFamilyCollectionHeaderCell.h; sourceTree = "<group>"; };
+		3071C936225B5E5800CC5935 /* InfoStreamFamilySectionHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoStreamFamilySectionHeaderCell.m; sourceTree = "<group>"; };
+		3071C937225B5E5800CC5935 /* InfoStreamFamilySectionFooterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoStreamFamilySectionFooterCell.m; sourceTree = "<group>"; };
+		3071C938225B5E5800CC5935 /* InfoStreamFamilySectionFooterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoStreamFamilySectionFooterCell.h; sourceTree = "<group>"; };
+		3071C939225B5E5900CC5935 /* InfoStreamFamilySectionHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoStreamFamilySectionHeaderCell.h; sourceTree = "<group>"; };
 		3071C93C225B5EE100CC5935 /* InfoStreamFamilyItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamFamilyItemModel.h; sourceTree = "<group>"; };
 		3071C93D225B5EE100CC5935 /* InfoStreamFamilyItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamFamilyItemModel.m; sourceTree = "<group>"; };
 		3071C941225B601300CC5935 /* InfoStreamFamilyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamFamilyView.h; sourceTree = "<group>"; };
@@ -169,10 +169,12 @@
 			isa = PBXGroup;
 			children = (
 				3071C93F225B5F7900CC5935 /* Base */,
-				3071C938225B5E5800CC5935 /* InfoStreamFamilyCollectionFooterCell.h */,
-				3071C937225B5E5800CC5935 /* InfoStreamFamilyCollectionFooterCell.m */,
-				3071C939225B5E5900CC5935 /* InfoStreamFamilyCollectionHeaderCell.h */,
-				3071C936225B5E5800CC5935 /* InfoStreamFamilyCollectionHeaderCell.m */,
+				3071C939225B5E5900CC5935 /* InfoStreamFamilySectionHeaderCell.h */,
+				3071C936225B5E5800CC5935 /* InfoStreamFamilySectionHeaderCell.m */,
+				3071C938225B5E5800CC5935 /* InfoStreamFamilySectionFooterCell.h */,
+				3071C937225B5E5800CC5935 /* InfoStreamFamilySectionFooterCell.m */,
+				3085E3F6225C432300B5B8B6 /* InfoStreamFamilyHeaderCell.h */,
+				3085E3F7225C432300B5B8B6 /* InfoStreamFamilyHeaderCell.m */,
 				3071C947225B6DA900CC5935 /* InfoStreamFamilyRoleViewCell.h */,
 				3071C948225B6DA900CC5935 /* InfoStreamFamilyRoleViewCell.m */,
 				3071C94A225B6F4A00CC5935 /* InfoStreamFamilyCollectionCell.h */,
@@ -181,8 +183,6 @@
 				3071C934225B5D4000CC5935 /* InfoStreamCollectionReusableView.m */,
 				3071C941225B601300CC5935 /* InfoStreamFamilyView.h */,
 				3071C942225B601300CC5935 /* InfoStreamFamilyView.m */,
-				3085E3F6225C432300B5B8B6 /* InfoStreamFamilyHeaderCell.h */,
-				3085E3F7225C432300B5B8B6 /* InfoStreamFamilyHeaderCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -381,7 +381,7 @@
 				3071C923225B507E00CC5935 /* InfoStreamView.m in Sources */,
 				3071C935225B5D4000CC5935 /* InfoStreamCollectionReusableView.m in Sources */,
 				3071C946225B60FA00CC5935 /* InfoStreamFamilySectionModel.m in Sources */,
-				3071C93A225B5E5900CC5935 /* InfoStreamFamilyCollectionHeaderCell.m in Sources */,
+				3071C93A225B5E5900CC5935 /* InfoStreamFamilySectionHeaderCell.m in Sources */,
 				3071C920225B419A00CC5935 /* RoleInfoStreamDatasModel.m in Sources */,
 				3071C91D225B40DE00CC5935 /* InfoStreamFamilyViewModel.m in Sources */,
 				3085E3F8225C432300B5B8B6 /* InfoStreamFamilyHeaderCell.m in Sources */,
@@ -390,7 +390,7 @@
 				3071C932225B57FF00CC5935 /* UIView+FLKit.m in Sources */,
 				3071C94C225B6F4B00CC5935 /* InfoStreamFamilyCollectionCell.m in Sources */,
 				3071C926225B52D800CC5935 /* InfoStreamRefreshHeader.m in Sources */,
-				3071C93B225B5E5900CC5935 /* InfoStreamFamilyCollectionFooterCell.m in Sources */,
+				3071C93B225B5E5900CC5935 /* InfoStreamFamilySectionFooterCell.m in Sources */,
 				3071C911225B3B1500CC5935 /* InfoStreamViewController.m in Sources */,
 				3071C943225B601300CC5935 /* InfoStreamFamilyView.m in Sources */,
 				3071C904225B377C00CC5935 /* main.m in Sources */,
