@@ -31,7 +31,7 @@ extern Class rawDataClassWithLogicalType(InfoStreamFamilySectionLogicalType logi
 @property(nonatomic, strong) id rawData;
 
 
-- (void)setModelWithData:(_Nullable id)model logicalType:(InfoStreamFamilySectionLogicalType)logicalType sectionStyle:(InfoStreamSectionStyle)sectionStyle;
+- (void)setModelWithData:(_Nullable id)model logicalType:(InfoStreamFamilySectionLogicalType)logicalType sectionStyle:(InfoStreamSectionStyle)sectionStyle title:(NSString*)title isDate:(BOOL)isDate;
 
 @end
 

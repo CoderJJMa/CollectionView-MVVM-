@@ -24,7 +24,8 @@ Class rawDataClassWithLogicalType(InfoStreamFamilySectionLogicalType logicalType
 @implementation InfoStreamFamilySectionModel
 
 
-- (void)setModelWithData:(id)model logicalType:(InfoStreamFamilySectionLogicalType)logicalType sectionStyle:(InfoStreamSectionStyle)sectionStyle {
+- (void)setModelWithData:(id)model logicalType:(InfoStreamFamilySectionLogicalType)logicalType sectionStyle:(InfoStreamSectionStyle)sectionStyle title:(NSString*)title isDate:(BOOL)isDate {
+    
     self.logicalType = logicalType;
     self.rawData = model;
     self.sectionStyle = sectionStyle;
@@ -63,7 +64,9 @@ Class rawDataClassWithLogicalType(InfoStreamFamilySectionLogicalType logicalType
             InfoStreamFamilyItemModel *item = [InfoStreamFamilyItemModel new];
             item.infoStyle = InfoStreamItemStyleSectionHeader;
             item.showIndicator = NO;
-            item.title = @"今日上网动态";
+            item.title = title;
+             item.icon = @"sr_istm_icon_dot";
+            item.info = @{@"isDate":@(isDate)};
             [sections addObject:item];
         }
         
@@ -153,8 +156,3 @@ Class rawDataClassWithLogicalType(InfoStreamFamilySectionLogicalType logicalType
 
 @end
 
-
-
-
-//@implementation RoleInfoStreamDatasBehavior
-//@end

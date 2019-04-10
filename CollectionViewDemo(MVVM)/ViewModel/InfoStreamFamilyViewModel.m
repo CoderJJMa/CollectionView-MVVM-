@@ -49,22 +49,23 @@
     //header
     {
         InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
-        [sec setModelWithData:_rawData.family logicalType:InfoStreamFamilySectionLogicalType_Header sectionStyle:InfoStreamSectionStyleContentOnly];
+        [sec setModelWithData:_rawData.family logicalType:InfoStreamFamilySectionLogicalType_Header sectionStyle:InfoStreamSectionStyleContentOnly title:@"今日上网动态" isDate:NO];
         [sections addObject:sec];
     }
     
     
     for (RoleInfoStreamDatasFolkInfo *folk in _rawData.folks) {
         InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
-        [sec setModelWithData:folk logicalType:InfoStreamFamilySectionLogicalType_Role sectionStyle:InfoStreamSectionStyleContentOnly];
+        [sec setModelWithData:folk logicalType:InfoStreamFamilySectionLogicalType_Role sectionStyle:InfoStreamSectionStyleContentOnly title:@"今日上网动态" isDate:NO];
         sec.familyId = folk.folkId;
         [sections addObject:sec];
         
         NSInteger index = 0;
-        
+        NSString *oldSectionTitle;
+
         if(folk.behavior.count == 0){
             InfoStreamFamilySectionModel *seci = [InfoStreamFamilySectionModel new];
-            [seci setModelWithData:folk logicalType:InfoStreamFamilySectionLogicalType_NoData sectionStyle:InfoStreamSectionStyleContentOnly];
+            [seci setModelWithData:folk logicalType:InfoStreamFamilySectionLogicalType_NoData sectionStyle:InfoStreamSectionStyleContentOnly title:@"今日上网动态" isDate:NO];
             
             seci.familyId = sec.familyId;
             [sections addObject:seci];
@@ -72,10 +73,35 @@
         }else{
             
             for (RoleInfoStreamDatasBehavior *tb in folk.behavior) {
+                
+                BOOL hasSectionTitle = NO;
+                NSString *sectionTitle = [NSString getDateTextWithTimeStamp:tb.time];
+                if (!oldSectionTitle || ![oldSectionTitle isEqualToString:sectionTitle]) {
+                    hasSectionTitle = YES;
+                }
+                oldSectionTitle = sectionTitle;
+                
+                BOOL isDate = YES;
+                if ([sectionTitle isEqualToString:@"今日"]) {
+                    isDate = NO;
+                    sectionTitle = @"今日上网动态";
+                }
+                
+                
                 InfoStreamSectionStyle sectionStyle;
-                if (index == 0 && index == folk.behavior.count-1) {
+//                if (index == 0 && index == folk.behavior.count-1) {
+//                    sectionStyle = InfoStreamSectionStyleDefault;
+//                }else if (index == 0) {
+//                    sectionStyle = InfoStreamSectionStyleContentAndHeader;
+//                }else if (index == folk.behavior.count-1) {
+//                    sectionStyle = InfoStreamSectionStyleContentAndFooter;
+//                }else {
+//                    sectionStyle = InfoStreamSectionStyleContentOnly;
+//                }
+
+                if (hasSectionTitle && index == folk.behavior.count-1) {
                     sectionStyle = InfoStreamSectionStyleDefault;
-                }else if (index == 0) {
+                }else if (hasSectionTitle) {
                     sectionStyle = InfoStreamSectionStyleContentAndHeader;
                 }else if (index == folk.behavior.count-1) {
                     sectionStyle = InfoStreamSectionStyleContentAndFooter;
@@ -84,7 +110,7 @@
                 }
                 
                 InfoStreamFamilySectionModel *seci = [InfoStreamFamilySectionModel new];
-                [seci setModelWithData:tb logicalType:InfoStreamFamilySectionLogicalType_Message sectionStyle:sectionStyle];
+                [seci setModelWithData:tb logicalType:InfoStreamFamilySectionLogicalType_Message sectionStyle:sectionStyle title:sectionTitle isDate:isDate];
                 seci.familyId = sec.familyId;
                 [sections addObject:seci];
                 ++index;
@@ -98,40 +124,41 @@
 }
 
 - (void)setFreshDisplayData {
+    
     NSMutableArray<InfoStreamFamilySectionModel*> *sections = [NSMutableArray new];
 
     //header
     {
         InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
-        [sec setModelWithData:_rawData logicalType:InfoStreamFamilySectionLogicalType_Header sectionStyle:InfoStreamSectionStyleContentOnly];
+        [sec setModelWithData:_rawData logicalType:InfoStreamFamilySectionLogicalType_Header sectionStyle:InfoStreamSectionStyleContentOnly title:@"今日上网动态" isDate:NO];
         [sections addObject:sec];
     }
 
     //开始守护
     {
         InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
-        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_BeginProtection sectionStyle:InfoStreamSectionStyleContentOnly];
+        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_BeginProtection sectionStyle:InfoStreamSectionStyleContentOnly title:@"今日上网动态" isDate:NO];
         [sections addObject:sec];
     }
 
     //绑定微信
     {
         InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
-        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_BoundingWechat sectionStyle:InfoStreamSectionStyleContentOnly];
+        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_BoundingWechat sectionStyle:InfoStreamSectionStyleContentOnly title:@"今日上网动态" isDate:NO];
         [sections addObject:sec];
     }
 
     //点亮守护计划
     {
         InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
-        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_LightProtection sectionStyle:InfoStreamSectionStyleContentOnly];
+        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_LightProtection sectionStyle:InfoStreamSectionStyleContentOnly title:@"今日上网动态" isDate:NO];
         [sections addObject:sec];
     }
 
     //恭喜您
     {
         InfoStreamFamilySectionModel *sec = [InfoStreamFamilySectionModel new];
-        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_Congratulation sectionStyle:InfoStreamSectionStyleContentOnly];
+        [sec setModelWithData:nil logicalType:InfoStreamFamilySectionLogicalType_Congratulation sectionStyle:InfoStreamSectionStyleContentOnly title:@"今日上网动态" isDate:NO];
         [sections addObject:sec];
     }
     self.infoCards = sections;
