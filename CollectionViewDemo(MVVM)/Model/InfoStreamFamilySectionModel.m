@@ -97,6 +97,20 @@ Class rawDataClassWithLogicalType(InfoStreamFamilySectionLogicalType logicalType
               || logicalType == InfoStreamFamilySectionLogicalType_Congratulation) {
         
         [self constructCustomModelWithType:logicalType];
+    
+    }else if (logicalType == InfoStreamFamilySectionLogicalType_NoData){
+        
+        RoleInfoStreamDatasFolkInfo *folk = (RoleInfoStreamDatasFolkInfo*)model;
+        InfoStreamFamilyItemModel *item = [InfoStreamFamilyItemModel new];
+        item.infoStyle = InfoStreamItemStyleNoData;
+        item.showIndicator = YES;
+        item.icon = folk.titleIcon;
+        item.title = [NSString stringWithFormat:@"%@最近一周都没有上网动态",folk.title];
+        item.subtitle = folk.subtitle;
+        item.desc = folk.desc;
+        item.descType = folk.descType;
+        self.infos = @[item];
+        
     }
     
 }

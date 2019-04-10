@@ -35,6 +35,7 @@
 		3085E402225C5EC500B5B8B6 /* MBProgressHUD+Text.m in Sources */ = {isa = PBXBuildFile; fileRef = 3085E401225C5EC500B5B8B6 /* MBProgressHUD+Text.m */; };
 		3085E405225C7CEF00B5B8B6 /* InfoStreamFamilyCongratulationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3085E404225C7CEF00B5B8B6 /* InfoStreamFamilyCongratulationCell.m */; };
 		3085E408225C84B800B5B8B6 /* InfoStreamFamilyWechatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3085E407225C84B800B5B8B6 /* InfoStreamFamilyWechatCell.m */; };
+		30D66ED0225E2520007E283C /* InfoStreamFamilyNoDataViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D66ECF225E2520007E283C /* InfoStreamFamilyNoDataViewCell.m */; };
 		4796A592A80DB6F5C939C009 /* Pods_CollectionViewDemo_MVVM_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7142B1C712E1D4864C3C72A3 /* Pods_CollectionViewDemo_MVVM_.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,8 @@
 		3085E404225C7CEF00B5B8B6 /* InfoStreamFamilyCongratulationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamFamilyCongratulationCell.m; sourceTree = "<group>"; };
 		3085E406225C84B800B5B8B6 /* InfoStreamFamilyWechatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoStreamFamilyWechatCell.h; sourceTree = "<group>"; };
 		3085E407225C84B800B5B8B6 /* InfoStreamFamilyWechatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoStreamFamilyWechatCell.m; sourceTree = "<group>"; };
+		30D66ECE225E2520007E283C /* InfoStreamFamilyNoDataViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoStreamFamilyNoDataViewCell.h; sourceTree = "<group>"; };
+		30D66ECF225E2520007E283C /* InfoStreamFamilyNoDataViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoStreamFamilyNoDataViewCell.m; sourceTree = "<group>"; };
 		65A1E31BEC563E2AAF4FC991 /* Pods-CollectionViewDemo(MVVM).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewDemo(MVVM).release.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionViewDemo(MVVM)/Pods-CollectionViewDemo(MVVM).release.xcconfig"; sourceTree = "<group>"; };
 		7142B1C712E1D4864C3C72A3 /* Pods_CollectionViewDemo_MVVM_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionViewDemo_MVVM_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -194,6 +197,8 @@
 				3071C942225B601300CC5935 /* InfoStreamFamilyView.m */,
 				3085E406225C84B800B5B8B6 /* InfoStreamFamilyWechatCell.h */,
 				3085E407225C84B800B5B8B6 /* InfoStreamFamilyWechatCell.m */,
+				30D66ECE225E2520007E283C /* InfoStreamFamilyNoDataViewCell.h */,
+				30D66ECF225E2520007E283C /* InfoStreamFamilyNoDataViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -409,6 +414,7 @@
 				3071C946225B60FA00CC5935 /* InfoStreamFamilySectionModel.m in Sources */,
 				3071C93A225B5E5900CC5935 /* InfoStreamFamilySectionHeaderCell.m in Sources */,
 				3071C920225B419A00CC5935 /* RoleInfoStreamDatasModel.m in Sources */,
+				30D66ED0225E2520007E283C /* InfoStreamFamilyNoDataViewCell.m in Sources */,
 				3071C91D225B40DE00CC5935 /* InfoStreamFamilyViewModel.m in Sources */,
 				3085E3F8225C432300B5B8B6 /* InfoStreamFamilyHeaderCell.m in Sources */,
 				3071C929225B53F100CC5935 /* InfoStreamSectionModel.m in Sources */,

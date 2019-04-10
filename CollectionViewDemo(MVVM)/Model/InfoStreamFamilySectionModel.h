@@ -18,6 +18,7 @@ typedef NS_ENUM(NSInteger, InfoStreamFamilySectionLogicalType) {
     InfoStreamFamilySectionLogicalType_BoundingWechat,  //绑定微信
     InfoStreamFamilySectionLogicalType_LightProtection,  //点亮守护
     InfoStreamFamilySectionLogicalType_Congratulation,  //恭喜您
+    InfoStreamFamilySectionLogicalType_NoData,  //恭喜您
 };
 
 extern Class rawDataClassWithLogicalType(InfoStreamFamilySectionLogicalType logicalType);

@@ -61,29 +61,41 @@
         [sections addObject:sec];
         
         NSInteger index = 0;
-        for (RoleInfoStreamDatasBehavior *tb in folk.behavior) {
-            InfoStreamSectionStyle sectionStyle;
-            if (index == 0 && index == folk.behavior.count-1) {
-                sectionStyle = InfoStreamSectionStyleDefault;
-            }else if (index == 0) {
-                sectionStyle = InfoStreamSectionStyleContentAndHeader;
-            }else if (index == folk.behavior.count-1) {
-                sectionStyle = InfoStreamSectionStyleContentAndFooter;
-            }else {
-                sectionStyle = InfoStreamSectionStyleContentOnly;
-            }
-            
+        
+        if(folk.behavior.count == 0){
             InfoStreamFamilySectionModel *seci = [InfoStreamFamilySectionModel new];
-            [seci setModelWithData:tb logicalType:InfoStreamFamilySectionLogicalType_Message sectionStyle:sectionStyle];
+            [seci setModelWithData:folk logicalType:InfoStreamFamilySectionLogicalType_NoData sectionStyle:InfoStreamSectionStyleContentOnly];
+            
             seci.familyId = sec.familyId;
             [sections addObject:seci];
-            ++index;
+            
+        }else{
+            
+            for (RoleInfoStreamDatasBehavior *tb in folk.behavior) {
+                InfoStreamSectionStyle sectionStyle;
+                if (index == 0 && index == folk.behavior.count-1) {
+                    sectionStyle = InfoStreamSectionStyleDefault;
+                }else if (index == 0) {
+                    sectionStyle = InfoStreamSectionStyleContentAndHeader;
+                }else if (index == folk.behavior.count-1) {
+                    sectionStyle = InfoStreamSectionStyleContentAndFooter;
+                }else {
+                    sectionStyle = InfoStreamSectionStyleContentOnly;
+                }
+                
+                InfoStreamFamilySectionModel *seci = [InfoStreamFamilySectionModel new];
+                [seci setModelWithData:tb logicalType:InfoStreamFamilySectionLogicalType_Message sectionStyle:sectionStyle];
+                seci.familyId = sec.familyId;
+                [sections addObject:seci];
+                ++index;
+            }
+            
         }
+       
     }
     self.infoCards = sections;
     
 }
-
 
 - (void)setFreshDisplayData {
     NSMutableArray<InfoStreamFamilySectionModel*> *sections = [NSMutableArray new];

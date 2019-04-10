@@ -14,6 +14,7 @@
 #import "InfoStreamFamilyHeaderCell.h"
 #import "InfoStreamFamilyCongratulationCell.h"
 #import "InfoStreamFamilyWechatCell.h"
+#import "InfoStreamFamilyNoDataViewCell.h"
 
 #define kInfoStreamFamilyMargin 0
 
@@ -65,6 +66,7 @@
              @(InfoStreamItemStyleHeader): [InfoStreamFamilyHeaderCell class],
              @(InfoStreamItemStyleCongratulation): [InfoStreamFamilyCongratulationCell class],// 恭喜
              @(InfoStreamItemStyleWechat): [InfoStreamFamilyWechatCell class],
+             @(InfoStreamItemStyleNoData): [InfoStreamFamilyNoDataViewCell class],//没有数据
              };
 }
 

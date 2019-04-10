@@ -63,4 +63,5 @@ typedef NS_ENUM(NSInteger, InfoStreamItemStyle) {
     InfoStreamItemStyleSectionFooter,
     InfoStreamItemStyleWechat, //开启守护，绑定微信，点亮守护计划共用该cell
     InfoStreamItemStyleCongratulation,//恭喜您样式
+    InfoStreamItemStyleNoData,  //没有数据
 };

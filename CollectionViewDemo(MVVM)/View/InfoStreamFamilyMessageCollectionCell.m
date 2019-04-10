@@ -77,12 +77,28 @@
     self.line.backgroundColor = UIColorFromRGB(0xF1F2F5);
     [self.contentView addSubview:self.line];
     
+    [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(12);
+        make.top.mas_equalTo(16);
+        make.width.mas_equalTo(50);
+        make.height.mas_equalTo(50);
+    }];
+    
+    [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.iconView.mas_right).mas_offset(12);
+        make.top.mas_equalTo(self.iconView.mas_top);
+    }];
+    
     [self.tipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(74);
         make.right.mas_equalTo(-12);
         make.top.mas_equalTo(78);
     }];
     
+    [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.nameLabel.mas_left);
+        make.top.mas_equalTo(self.nameLabel.mas_bottom).mas_offset(8);
+    }];
     
     [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.mas_equalTo(0);
@@ -96,16 +112,16 @@
 {
     [super layoutSubviews];
 
-    self.iconView.fl_left = 12;
-    self.iconView.fl_top = 16;
+//    self.iconView.fl_left = 12;
+//    self.iconView.fl_top = 16;
+//
+//    self.nameLabel.fl_left = self.iconView.fl_width + self.iconView.fl_left + 12;
+//    self.nameLabel.fl_top = self.iconView.fl_top;
+//    [self.nameLabel sizeToFit];
     
-    self.nameLabel.fl_left = self.iconView.fl_width + self.iconView.fl_left + 12;
-    self.nameLabel.fl_top = self.iconView.fl_top;
-    [self.nameLabel sizeToFit];
-    
-    self.timeLabel.fl_left = self.iconView.fl_width + self.iconView.fl_left + 12;
-    self.timeLabel.fl_top = self.nameLabel.fl_top + self.nameLabel.fl_height + 4;
-    [self.timeLabel sizeToFit];
+//    self.timeLabel.fl_left = self.iconView.fl_width + self.iconView.fl_left + 12;
+//    self.timeLabel.fl_top = self.nameLabel.fl_top + self.nameLabel.fl_height + 4;
+//    [self.timeLabel sizeToFit];
 }
 
 
